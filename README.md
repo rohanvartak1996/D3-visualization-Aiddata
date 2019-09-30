@@ -3,6 +3,9 @@
 ## The following visualizations are developed in D3.js to answer various questions on Aidata.
 
 
+## Project 1: Geographical Data
+
+
 ### Question 1 
 ### How do the countries compare in terms of how much they receive and donate from other countries? Are there countries that donate much more than they receive or receive much more than they donate?
 
@@ -20,3 +23,10 @@ question. I have not considered all the countries as the amount scale is in bill
 
 Explanation: In the above chart I used the color scheme as, when the donated amount is greater than the recevied amount then the color is red, and when the
 received amount is more then the color is blue. The size encodes the absolute difference between the amount donated and the amount received in $ Billion. So we see that the countries that donate more are United States, European Nations like Germany, France, Netherlans, UK, Spain. In Asia we see Japan having significant donations. Australia and New Zealand also have more donated aid in south pacific region. Developing Countries in Asia and South America like, India, China, Indonesia, Bangladesh, Brazil, Argentina recieve most of the aid. None of the countries in Africa give major donations and mostly received the aid. We see contrast in North America where US donates the maximum aid and Mexico recevies a considerable amount of aid. Similarly we see that western european nations donate more while the eastern europen nations receive more. In Aisa Japan gives a high amount of donations, while its neighbours like China, Phillipine or Russia receive the aid. We also see that middle eastern countries like Saudi Arabia, UAE, Kuwait give more donations.
+
+### Question 3
+### Are there any major differences in how the top 5 most frequent purposes of disbursements distribute geographically in terms of countries that receive donations? Are there countries that tend to receive more of certain type of donations than others?
+
+![Visualization 3](https://user-images.githubusercontent.com/40985431/65848551-9464dd00-e314-11e9-97b7-17f20e3cd5ae.png)
+
+Explanation: Here I have faceted the map 5 times for the top 5 purposes of disbursement. I have considered the all countries for each purpose of disbursement. The color encodes the purpose and the size encodes the amount donated. We see that there are no major differences in the geographical distribution of the aid for the top 5 purposes. The overall pattern is the same for all the 5 purposes. In the size encoding we do see that some countries get more aid than others, but on a general trend we see that countries like India, China, Brazil, Argentia, Indonesia, Columbia, Egypt, Turkey, Pakistan, Thailand, Russia, get most of the aid and the aid is almost evenly distributed, with developing nations getting the majority of the aid and small nations getting smaller protions.
