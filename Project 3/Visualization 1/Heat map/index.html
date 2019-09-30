@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<script src="http://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+<h1>Visualization 1</h1>
+    <h2>Relationship between countries in terms of donated and received aid.</h2>
+<div id="legend"></div>
+<div id="my_dataviz"></div>
+<h4>Question: Create an overview of the relationships between countries so that it is possible to see who donates to whom and how much. Questions one should be able to answer are: 1) Who are the major donors and to which countries do they donate the most? And conversely, who are the major receivers and which countries do they receive from the most? </h4>
+<h4>
+Explanation: Here I have made a heat map to show the relationship between the countries. The countries have been ordered such
+    that the countries that donate more are to the top and lesser donating countries are at the bottom of Y axis. For the X axis
+    the countries which are receiving more are to the left and the countries that receive less are to the right. We see that 
+    countries like United States, Japan, Germany, France, United Knigdom, Canada, etc. are the major donors while countries like
+    Indonesia, India, China, Egypt, Pakistan, Philippines are the major receivers. 
+
+
+
+</h4>
+<style>
+  
+    body {
+            font-family: Helvetica, Arial, sans-serif
+        }
+    svg {
+        border: solid 1px #a9a9a9;
+
+    }
+    h1 {
+            background-color: #2a5599;
+            color: white;
+            padding: 10px;
+        }
+    
+    h2 {
+        font-size: 20px;
+        font: Arial;
+    }
+    
+    .tooltip {	
+    position: absolute;			
+    text-align: left;			
+    width: 220px;					
+    height: 50px;					
+    padding: 2px;				
+    font: 13px sans-serif;		
+    background: #dcdcdc;	
+    border: solid 1px #f5f5f5;		
+    border-radius: 0px;			
+    pointer-events: none;			
+}
+    .yaxis {
+  font: 13px sans-serif;
+}
+    
+    .xaxis {
+  font: 7px sans-serif;
+}
+    
+    .legendlabel{
+        font: 3px;
+    }
+    
+</style>
+
+<script>
+
+
+var margin = {top: 30, right: 20, bottom: 30, left: 250},
+  width = 1250 - margin.left - margin.right,
+  height = 500 - margin.top - margin.bottom;
+
+
+var svg = d3.select("#my_dataviz")
+.append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+.append("g")
+  .attr("transform",
+        "translate(" + margin.left + "," + margin.top + ")");
+    
+    
+var svg2 = d3.select("#legend")
+.append("svg")
+  .attr("width", 400)
+  .attr("height", 100)
+.append("g");
+    
+var myGroups = 
+[
+"Greece",
+"Luxembourg",
+"Ireland",
+"Portugal",
+"Finland",
+"Austria",
+"United Arab Emirates",
+"Australia",
+"Korea",
+"Belgium",
+"Switzerland",
+"Denmark",
+"Spain",
+"Norway",
+"Sweden",
+"Italy",
+"Netherlands",
+"Canada",
+"United Kingdom",
+"France",
+"Germany",
+"Japan",
+"United States",
+]
+
+var myVars = [
+"Indonesia",
+"India",
+"Egypt",
+"China",
+"Iraq",
+"Pakistan",
+"Philippines",
+"Bangladesh",
+"Afghanistan",
+"Viet Nam",
+"Russia",
+"Tanzania",
+"Thailand",
+"Mozambique",
+"Turkey",
+"Nigeria",
+"Kenya",
+"Brazil",
+"Morocco",
+"Congo, Democratic Republic of",
+"Mexico",
+"Ethiopia",
+"Sri Lanka",
+"Sudan",
+"Peru",
+"Zambia",
+"Ghana",
+"Jordan",
+"Colombia",
+"Poland",
+"Tunisia",
+"Cameroon",
+"Cote d`Ivoire",
+"Uganda",
+"Bolivia",
+"Malaysia",
+"Senegal",
+"Palestinian Adm. Areas",
+"Nicaragua",
+"South Africa",
+"Algeria",
+"Myanmar",
+"Mali",
+"Serbia",
+"Argentina",
+"Haiti",
+"Zimbabwe",
+"Nepal",
+"Burkina Faso",
+"Honduras",
+"El Salvador",
+"Malawi",
+"Madagascar",
+"Yemen",
+"Cambodia",
+"Somalia",
+"Venezuela",
+"Guatemala",
+"Angola",
+"Rwanda",
+"Syria",
+"Papua New Guinea",
+"Niger",
+"Bosnia-Herzegovina",
+"Lebanon",
+"Congo, Republic of",
+"Ukraine",
+"Ecuador",
+"Jamaica",
+"Benin",
+"Dominican Republic",
+"Liberia",
+"Guinea",
+"Israel",
+"Chile",
+"Laos",
+"Costa Rica",
+"Uzbekistan",
+"Iran",
+"Georgia",
+"Sierra Leone",
+"Chad",
+"Burundi",
+"Mauritania",
+"Albania",
+"Botswana",
+"Togo",
+"Mongolia",
+"Namibia",
+"Gabon",
+"Cape Verde",
+"Timor-Leste",
+"South Sudan",
+"Solomon Islands",
+"Kazakhstan",
+"Armenia",
+"Paraguay",
+"Panama",
+"Azerbaijan",
+"Kosovo",
+"Kyrgyz Republic",
+"Lesotho",
+"Mauritius",
+"Cuba",
+"Central African Republic",
+"Macedonia, FYR",
+"Guinea-Bissau",
+"Guyana",
+"Tajikistan",
+"Eritrea",
+"Croatia",
+"Moldova",
+"Djibouti",
+"Bhutan",
+"Swaziland",
+"Uruguay",
+"Gambia",
+"Samoa",
+"Belize",
+"Turkmenistan",
+"Comoros",
+"Libya",
+"Belarus",
+"Maldives"
+]
+
+
+
+
+
+var x = d3.scaleBand()
+  .range([ 0, width ])
+  .domain(myVars)
+  .padding(0.01);
+svg.append("g")
+    .attr("class", "xaxis")
+  .attr("transform", "translate(0," + 0 + ")")
+  .call(d3.axisTop(x))
+    .selectAll("text")
+    .remove();
+
+
+var y = d3.scaleBand()
+  .range([ height, 0 ])
+  .domain(myGroups)
+    .padding(0.01);
+svg.append("g")
+    .attr("class", "yaxis")
+  .call(d3.axisLeft(y));
+
+
+var myColor = d3.scaleLinear()
+        //.domain([0.7, 0.01])
+       //.interpolator(d3.interpolateMagma)
+     .interpolate(d3.interpolateHcl)
+     .domain([0.01, 0.7])  
+     .range(["#231D76", "#FFBF0D"])
+
+
+
+myColor.clamp(true);
+   
+var tooltip = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden");
+    
+    
+var defs = svg2.append("defs");
+
+    var linearGradient = defs.append("linearGradient")
+                            .attr("id", "linear-gradient");
+    
+var colorScale = d3.scaleLinear()
+    .range(["#232d76", "#3D1C78","#5E187B","#990877","#A20675",
+            "#C10E6C","#EF4153","#FF7E32","#FFBF0D"]);
+
+
+linearGradient.selectAll("stop")
+    .data( colorScale.range() )
+    .enter().append("stop")
+    .attr("offset", function(d,i) { return i/(colorScale.range().length-1); })
+    .attr("stop-color", function(d) { return d; });
+    
+    
+svg2.append("rect")
+    .attr("x", 20)
+    .attr("y", 45)
+    .attr("width", 350)
+    .attr("height", 15)
+    .style("fill", 'url(#linear-gradient)')
+    
+    
+svg2.append("text")
+    .attr("x", 20)
+    .attr("y", 25)
+    .text("Amount donated in $ Billions")
+    
+svg2.append("text")
+    .attr("class", "legendlabel")
+    .attr("x", 20)
+    .attr("y", 79)
+    .style("font", "5px")
+    .text("0.01")
+    
+svg2.append("text")
+    .attr("class", "legendlabel")
+    .attr("x", 350)
+    .attr("y", 79)
+    .style("font", "5px")
+    .text("0.7")
+    
+
+
+
+    
+function draw_X_lines() {
+     
+    
+    for (var i = 24; i < 240; i = i + 24)
+        {
+            svg.append("line").attr("x1", i).attr("y1", 0).attr("x2", i).attr("y2", 2940).attr("stroke-width", 0.99).attr("stroke", '#F6F6F6');
+        }
+    for (var i = 240; i < 480; i = i + 24)
+        {
+            svg.append("line").attr("x1", i-1).attr("y1", 0).attr("x2", i-1).attr("y2", 2940).attr("stroke-width", 0.99).attr("stroke", '#F6F6F6');
+        }
+    for (var i = 480; i < 720; i = i + 24)
+        {
+           svg.append("line").attr("x1", i-2).attr("y1", 0).attr("x2", i-2).attr("y2", 2940).attr("stroke-width", 0.99).attr("stroke", '#F6F6F6');
+        }
+    for (var i = 720; i < 912; i = i + 24)
+        {
+            svg.append("line").attr("x1", i-3).attr("y1", 0).attr("x2", i-3).attr("y2", 2940).attr("stroke-width", 0.99).attr("stroke", '#F6F6F6');
+        }
+    for (var i = 912; i < 1008; i = i + 24)
+        {
+            svg.append("line").attr("x1", i-4).attr("y1", 0).attr("x2", i-4).attr("y2", 2940).attr("stroke-width", 0.99).attr("stroke", '#F6F6F6');
+        }
+}
+    
+function draw_Y_lines() {
+    
+    var k = 20
+    var l = 0
+    for (var z= 1; z < 30; z = z + 1) 
+    {
+        for (var j=1; j< 2; j = j + 1)
+        {
+            for (var i=k ; i < (k + 20*5); i = i + 20)
+                {
+                    svg.append("line").attr("x1", 0).attr("y1", i).attr("x2", 980).attr("y2", i).attr("stroke-width", 0.99).attr("stroke", '#F6F6F6');
+                }
+            k = (k + 20*5)
+            l = l + 0.99
+        }
+    }
+    
+    svg.append("line").attr("x1", 0).attr("y1", 2939).attr("x2", 980).attr("y2", 2939).attr("stroke-width", 0.99).attr("stroke", '#F6F6F6');
+    svg.append("line").attr("x1", 0).attr("y1", 2919).attr("x2", 980).attr("y2", 2919).attr("stroke-width", 0.99).attr("stroke", '#F6F6F6');
+   
+}
+    
+
+d3.csv("heat2.csv", function(data) {
+
+  svg.selectAll()
+      .data(data, function(d) {return d.group+':'+d.variable;})
+      .enter()
+      .append("rect")
+      .attr("x", function(d) { return x(d.variable) })
+      .attr("y", function(d) { return y(d.group) })
+      //.attr("rx", 3)
+      //.attr("ry", 3)
+      .attr("width", x.bandwidth() )
+      .attr("height", y.bandwidth() )
+      .style("fill", function(d) { return myColor(d.value);} )
+    .on("mouseover", function(d){return tooltip.style("visibility", "visible").html("Country: " + d.group + "<br/>" + "Year: " + d.variable + "<br/>" + "Donated: $" + Math.abs(d.value) + " B");})
+    .on("mousemove", function(d){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px")
+                                                .html("Country: " + d.group + "<br/>" + "Year: " + d.variable + "<br/>" + "Donated: $" + Math.abs(d.value) + " B");})
+    .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+    
+        
+        //draw_X_lines()
+    
+        //draw_Y_lines()
+    
+    svg.append()
+    
+})
+
+</script>
