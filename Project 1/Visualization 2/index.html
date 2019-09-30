@@ -1,0 +1,190 @@
+<html>
+    
+<script src="d3.js"></script>
+
+<head>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif
+        }
+
+        h1 {
+            background-color: #2a5599;
+            color: white;
+            padding: 10px;
+        }
+               
+        svg {
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+        }
+   
+        .mainView {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #AirlinesChart{
+            width: 200px;
+        }
+        
+         .tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 80px;					
+    height: 18px;					
+    padding: 2px;				
+    font: 13px sans-serif;		
+    background: #dcdcdc;	
+    border: solid 1px #f5f5f5;		
+    border-radius: 3px;			
+    pointer-events: none;			
+}
+      
+        
+    </style>
+</head>
+
+<body>
+    <script>
+    let store = {}
+    
+    function loadData() {
+    return Promise.all([
+        d3.csv("data3.csv"),
+        d3.json("contries.geo.json"),
+    ]).then(datasets => {
+        store.countries = datasets[0];
+        store.geoJSON = datasets[1];
+        return store;
+    })
+    }
+        
+        function getMapConfig(){
+  let width = 1090;
+  let height = 550;
+  let width2 = 200;
+  let height2 = 400;
+  let container = d3.select('#Map')
+     container
+        .attr("width", width)
+        .attr("height", height)
+  let container2 = d3.select('#Legend')
+     container2
+        .attr("width", width2)
+        .attr("height", height2)
+  return {width, height, container, container2}
+}
+        
+        function getMapProjection(config) {
+  let {width, height} = config;
+  let projection = d3.geoMercator()//TODO: Create a projection of type Mercator.
+  projection.scale(170)
+            .translate([width / 2, height / 2 + 20])
+            
+  store.mapProjection = projection;
+  return projection;
+}
+        function drawBaseMap(container, countries, projection){
+  let path = d3.geoPath().projection(projection)//TODO: create a geoPath generator and set its projection to be the projection passed as parameter.
+  
+  container.selectAll("path").data(countries)
+      .enter().append("path")
+      .attr("d", path)//TODO: use the path generator to draw each country )
+      .attr("stroke", "#ccc")
+      .attr("fill", "#eee")
+  }
+        function drawMap(geoJeon) {
+    let config = getMapConfig();
+    let projection = getMapProjection(config)
+    drawBaseMap(config.container, geoJeon.features, projection)
+}
+        
+        
+        function drawAirports(airports) {
+  let config = getMapConfig(); //get the config
+  let projection = getMapProjection(config) //get the projection
+  let container = config.container; //get the container
+            
+var tooltip = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden");
+        
+  let circles = container.selectAll("circle");
+            
+        circles.data(airports)
+                .enter()
+                .append("circle")
+                .attr("r", function(d) { return (d.radius*3);})
+                .attr("cx", d => projection([+d.longitude, +d.latitude])[0])
+                .attr("cy", d => projection([+d.longitude, +d.latitude])[1])
+                .attr("fill", function(d) { return (d.color > 1 ? "#2a5599" : "#b22222")})
+                .on("mouseover", function(d){return tooltip.style("visibility", "visible").html(d.country);})
+                .on("mousemove", function(d){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px")
+                                                .html(d.country);})
+                .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+            
+ let container2 = config.container2;
+    
+    container2.append("text").attr("x", 70).attr("y", 21).text("Legend").style("font-size", "15px").style("font-weight", "bold").attr("alignment-baseline","middle");
+    container2.append("circle").attr("r", 10).attr("cx", 25).attr("cy", 60).attr("fill", "#b22222");
+    container2.append("text").attr("x", 45).attr("y", 62).text("Donated More").style("font-size", "15px").attr("alignment-baseline","middle");
+    container2.append("circle").attr("r", 10).attr("cx", 25).attr("cy", 90).attr("fill", "#2a5599");
+    container2.append("text").attr("x", 45).attr("y", 92).text("Received More").style("font-size", "15px").attr("alignment-baseline","middle");      
+    
+    container2.append("circle").attr("r", 0.5*3).attr("cx", 25).attr("cy", 150).attr("fill", "#696969");
+    container2.append("text").attr("x", 50).attr("y", 152).text("Less than $10B").style("font-size", "15px").attr("alignment-baseline","middle");      
+    container2.append("circle").attr("r", 1*3).attr("cx", 25).attr("cy", 180).attr("fill", "#696969");
+    container2.append("text").attr("x", 50).attr("y", 182).text("$10B to $30B").style("font-size", "15px").attr("alignment-baseline","middle");      
+    container2.append("circle").attr("r", 2*3).attr("cx", 25).attr("cy", 210).attr("fill", "#696969");
+    container2.append("text").attr("x", 50).attr("y", 212).text("$30B to $50B").style("font-size", "15px").attr("alignment-baseline","middle");      
+    container2.append("circle").attr("r", 3*3).attr("cx", 25).attr("cy", 240).attr("fill", "#696969");
+    container2.append("text").attr("x", 50).attr("y", 242).text("$50B to $100B").style("font-size", "15px").attr("alignment-baseline","middle");      
+    container2.append("circle").attr("r", 4*3).attr("cx", 25).attr("cy", 270).attr("fill", "#696969");
+    container2.append("text").attr("x", 50).attr("y", 272).text("$100B to $300B").style("font-size", "15px").attr("alignment-baseline","middle");      
+    container2.append("circle").attr("r", 5*3).attr("cx", 25).attr("cy", 305).attr("fill", "#696969");
+    container2.append("text").attr("x", 50).attr("y", 307).text("$300B to $500B").style("font-size", "15px").attr("alignment-baseline","middle");      
+    container2.append("circle").attr("r", 6*3).attr("cx", 25).attr("cy", 345).attr("fill", "#696969");
+    container2.append("text").attr("x", 50).attr("y", 347).text("Greater than $500B").style("font-size", "15px").attr("alignment-baseline","middle");      
+    
+                
+}
+        
+    function showData() {
+        
+        drawMap(store.geoJSON) 
+        drawAirports(store.countries)
+    }
+        loadData().then(showData);
+        
+
+
+    </script>
+    <h1>Visualization 2</h1>
+    <h2>Geographical Distribution of Aid Data</h2>
+    <div class="mainView">
+        <div>
+            <svg id="Legend"></svg>
+        </div>
+        <div>
+            <svg id="Map"></svg>
+        </div>
+    </div>
+    <h4>Question: Do the countries that receive and donate the most tend to cluster around specific geographical areas of the world? Are there neighboring countries that have radically different patterns in terms of how much they receive vs. how much they donate?</h4>
+    <h4>Explanation: In the above chart I used the color scheme as, when the donated amount is greater than the recevied amount then
+    the color is red, and when the received amount is more then the color is blue. The size encodes the absolute difference 
+        between the amount donated and the amount received in $ Billion. So we see that
+    the countries that donate more are United States, European Nations like Germany, France, Netherlans, UK, Spain. In Asia we see Japan 
+    having significant donations. Australia and New Zealand also have more donated aid in south pacific region. Developing Countries in 
+    Asia and South America like, India, China, Indonesia, Bangladesh, Brazil, Argentina recieve most of the aid. None of the countries 
+    in Africa give major donations and mostly received the aid. We see contrast in North America where US donates the maximum aid
+    and Mexico recevies a considerable amount of aid. Similarly we see that western european nations donate more while the 
+    eastern europen nations receive more. In Aisa Japan gives a high amount of donations, while its neighbours like China, Phillipine or Russia
+    receive the aid. We also see that middle eastern countries like Saudi Arabia, UAE, Kuwait give more donations.</h4>
+    </body>
+
+</html>

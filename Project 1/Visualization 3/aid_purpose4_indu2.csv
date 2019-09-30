@@ -1,0 +1,170 @@
+country,purpose,latitude,longitude,amount,radius,color
+India,industrial development,20.593684,78.96288,24.467,6,1
+Brazil,industrial development,-14.235004,-51.92528,15.870,6,1
+China,industrial development,35.86166,104.195397,12.562,6,1
+Mexico,industrial development,23.634501,-102.552784,12.124,6,1
+Indonesia,industrial development,-0.789275,113.921327,11.582,6,1
+Egypt,industrial development,26.820553,30.802498,10.459,6,1
+Russia,industrial development,61.52401,105.318756,10.165,6,1
+Turkey,industrial development,38.963745,35.243322,9.089,5,1
+Argentina,industrial development,-38.416097,-63.616672,8.465,5,1
+Thailand,industrial development,15.870032,100.992541,6.701,5,1
+Venezuela,industrial development,6.42375,-66.58973,6.632,5,2
+Pakistan,industrial development,30.375321,69.345116,6.012,5,2
+Philippines,industrial development,12.879721,121.774017,5.022,5,2
+Bangladesh,industrial development,23.684994,90.356331,4.501,4,2
+Romania,industrial development,45.943161,24.96676,3.295,4,2
+Morocco,industrial development,31.791702,-7.09262,3.208,4,2
+Algeria,industrial development,28.033886,1.659626,3.090,4,2
+Tunisia,industrial development,33.886917,9.537499,3.073,4,2
+Tanzania,industrial development,-6.369028,34.888822,3.039,4,2
+Malaysia,industrial development,4.210484,101.975766,2.976,4,2
+Colombia,industrial development,4.570868,-74.297333,2.970,4,2
+Czech Republic,industrial development,49.817492,15.472962,2.764,4,2
+Poland,industrial development,51.919438,19.145136,2.666,4,2
+Israel,industrial development,31.046051,34.851612,2.578,4,2
+Iraq,industrial development,33.223191,43.679291,2.420,4,2
+Chile,industrial development,-35.675147,-71.542969,2.381,4,2
+Nigeria,industrial development,9.081999,8.675277,1.885,4,2
+Peru,industrial development,-9.189967,-75.015152,1.748,4,2
+Hungary,industrial development,47.162494,19.503304,1.680,4,2
+Ukraine,industrial development,48.379433,31.16558,1.628,4,2
+Uzbekistan,industrial development,41.377491,64.585262,1.486,3,2
+Dominican Republic,industrial development,18.735693,-70.162651,1.477,3,2
+Ecuador,industrial development,-1.831239,-78.183406,1.324,3,2
+Ghana,industrial development,7.946527,-1.023194,1.242,3,2
+Kenya,industrial development,-0.023559,37.906193,1.203,3,2
+Syria,industrial development,34.802075,38.996815,1.194,3,2
+Jordan,industrial development,30.585164,36.238414,1.191,3,2
+Japan,industrial development,36.204824,138.252924,1.163,3,2
+Taiwan,industrial development,23.69781,120.960515,1.131,3,2
+Ethiopia,industrial development,9.145,40.489673,1.047,3,2
+Kazakhstan,industrial development,48.019573,66.923684,0.934,3,2
+Sri Lanka,industrial development,7.873054,80.771797,0.934,3,2
+Bolivia,industrial development,-16.290154,-63.588653,0.851,3,2
+El Salvador,industrial development,13.794185,-88.89653,0.818,3,2
+Portugal,industrial development,39.399872,-8.224454,0.783,3,2
+Zimbabwe,industrial development,-19.015438,29.154857,0.736,3,2
+Sudan,industrial development,12.862807,30.217636,0.733,3,2
+Mozambique,industrial development,-18.665695,35.529562,0.722,3,2
+Senegal,industrial development,14.497401,-14.452362,0.696,3,2
+Zambia,industrial development,-13.133897,27.849332,0.688,3,2
+Nepal,industrial development,28.394857,84.124008,0.684,3,2
+Jamaica,industrial development,18.109581,-77.297508,0.676,3,2
+Finland,industrial development,61.92411,25.748151,0.662,3,2
+Uruguay,industrial development,-32.522779,-55.765835,0.661,3,2
+Bulgaria,industrial development,42.733883,25.48583,0.658,3,2
+Croatia,industrial development,45.1,15.2,0.657,3,2
+Uganda,industrial development,1.373333,32.290275,0.631,3,2
+Honduras,industrial development,15.199999,-86.241905,0.576,3,2
+Iran,industrial development,32.427908,53.688046,0.566,3,2
+Oman,industrial development,21.512583,55.923255,0.517,3,2
+Saudi Arabia,industrial development,23.885942,45.079162,0.491,2,2
+Guatemala,industrial development,15.783471,-90.230759,0.490,2,2
+Cameroon,industrial development,7.369722,12.354722,0.442,2,2
+Somalia,industrial development,5.152149,46.199616,0.407,2,2
+Madagascar,industrial development,-18.766947,46.869107,0.384,2,2
+Costa Rica,industrial development,9.748917,-83.753428,0.352,2,2
+Guinea,industrial development,9.945587,-9.696645,0.351,2,2
+Nicaragua,industrial development,12.865416,-85.207229,0.349,2,2
+Swaziland,industrial development,-26.522503,31.465866,0.322,2,2
+Mali,industrial development,17.570692,-3.996166,0.315,2,2
+Lithuania,industrial development,55.169438,23.881275,0.302,2,2
+Angola,industrial development,-11.202692,17.873887,0.280,2,2
+Equatorial Guinea,industrial development,1.650801,10.267895,0.280,2,2
+Kuwait,industrial development,29.31166,47.481766,0.278,2,2
+Slovenia,industrial development,46.151241,14.995463,0.269,2,2
+Yemen,industrial development,15.552727,48.516388,0.259,2,2
+Togo,industrial development,8.619543,0.824782,0.253,2,2
+Afghanistan,industrial development,33.93911,67.709953,0.253,2,2
+Malawi,industrial development,-13.254308,34.301525,0.252,2,2
+Bahrain,industrial development,25.930414,50.637772,0.237,2,2
+Estonia,industrial development,58.595272,25.013607,0.235,2,2
+Turkmenistan,industrial development,38.969719,59.556278,0.221,2,2
+New Zealand,industrial development,-40.900557,174.885971,0.203,2,2
+Papua New Guinea,industrial development,-6.314993,143.95555,0.203,2,2
+Mauritius,industrial development,-20.348404,57.552152,0.199,2,2
+Bhutan,industrial development,27.514162,90.433601,0.199,2,2
+Rwanda,industrial development,-1.940278,29.873888,0.187,2,2
+Guyana,industrial development,4.860416,-58.93018,0.175,2,2
+Cape Verde,industrial development,16.002082,-24.013197,0.172,2,2
+Belarus,industrial development,53.709807,27.953389,0.167,2,2
+Lesotho,industrial development,-29.609988,28.233608,0.158,2,2
+South Africa,industrial development,-30.559482,22.937506,0.154,2,2
+Haiti,industrial development,18.971187,-72.285215,0.150,2,2
+Albania,industrial development,41.153332,20.168331,0.149,2,2
+Guinea-Bissau,industrial development,11.803749,-15.180413,0.148,2,2
+Cuba,industrial development,21.521757,-77.781167,0.148,2,2
+Moldova,industrial development,47.411631,28.369885,0.143,2,2
+Benin,industrial development,9.30769,2.315834,0.139,2,2
+Burundi,industrial development,-3.373056,29.918886,0.138,2,2
+Greece,industrial development,39.074208,21.824312,0.137,2,2
+Burkina Faso,industrial development,12.238333,-1.561593,0.136,2,2
+Belgium,industrial development,50.503887,4.469936,0.130,2,2
+Georgia,industrial development,42.315407,43.356892,0.128,2,2
+Liberia,industrial development,6.428055,-9.429499,0.127,2,2
+Latvia,industrial development,56.879635,24.603189,0.126,2,2
+Lebanon,industrial development,33.854721,35.862285,0.125,2,2
+Singapore,industrial development,1.352083,103.819836,0.122,2,2
+Netherlands,industrial development,52.132633,5.291266,0.122,2,2
+Mongolia,industrial development,46.862496,103.846656,0.117,2,2
+Gabon,industrial development,-0.803689,11.609444,0.106,2,2
+Botswana,industrial development,-22.328474,24.684866,0.104,2,2
+Azerbaijan,industrial development,40.143105,47.576927,0.099,1,2
+Barbados,industrial development,13.193887,-59.543198,0.089,1,2
+Solomon Islands,industrial development,-9.64571,160.156194,0.087,1,2
+Central African Republic,industrial development,6.611111,20.939444,0.085,1,2
+Netherlands Antilles,industrial development,12.226079,-69.060087,0.084,1,2
+Cambodia,industrial development,12.565679,104.990963,0.082,1,2
+Fiji,industrial development,-16.578193,179.414413,0.081,1,2
+Qatar,industrial development,25.354826,51.183884,0.081,1,2
+Paraguay,industrial development,-23.442503,-58.443832,0.081,1,2
+New Caledonia,industrial development,-20.904305,165.618042,0.080,1,2
+Mauritania,industrial development,21.00789,-10.940835,0.080,1,2
+Armenia,industrial development,40.069099,45.038189,0.074,1,2
+Belize,industrial development,17.189877,-88.49765,0.074,1,2
+Chad,industrial development,15.454166,18.732207,0.070,1,2
+Panama,industrial development,8.537981,-80.782127,0.068,1,2
+Libya,industrial development,26.3351,17.228331,0.063,1,2
+United Arab Emirates,industrial development,23.424076,53.847818,0.059,1,2
+Ireland,industrial development,53.41291,-8.24389,0.052,1,2
+Serbia,industrial development,44.016521,21.005859,0.049,1,2
+Laos,industrial development,19.85627,102.495496,0.046,1,2
+Niger,industrial development,17.607789,8.081666,0.044,1,2
+Sweden,industrial development,60.128161,18.643501,0.035,1,2
+Gambia,industrial development,13.443182,-15.310139,0.030,1,2
+Seychelles,industrial development,-4.679574,55.491977,0.030,1,2
+Dominica,industrial development,15.414999,-61.370976,0.030,1,2
+Suriname,industrial development,3.919305,-56.027783,0.029,1,2
+Tajikistan,industrial development,38.861034,71.276093,0.028,1,2
+Bahamas,industrial development,25.03428,-77.39628,0.023,1,2
+Cayman Islands,industrial development,19.513469,-80.566956,0.023,1,2
+Aruba,industrial development,12.52111,-69.968338,0.022,1,2
+United States,industrial development,37.09024,-95.712891,0.021,1,2
+Djibouti,industrial development,11.825138,42.590275,0.020,1,2
+Maldives,industrial development,3.202778,73.22068,0.019,1,2
+Grenada,industrial development,12.262776,-61.604171,0.017,1,2
+Tonga,industrial development,-21.178986,-175.198242,0.016,1,2
+Kiribati,industrial development,-3.370417,-168.734039,0.016,1,2
+Samoa,industrial development,-13.759029,-172.104629,0.015,1,2
+Cyprus,industrial development,35.126413,33.429859,0.014,1,2
+Vanuatu,industrial development,-15.376706,166.959158,0.011,1,2
+Eritrea,industrial development,15.179384,39.782334,0.010,1,2
+Australia,industrial development,-25.274398,133.775136,0.009,1,2
+Sierra Leone,industrial development,8.460555,-11.779889,0.009,1,2
+Namibia,industrial development,-22.95764,18.49041,0.007,1,2
+Spain,industrial development,40.463667,-3.74922,0.007,1,2
+Montserrat,industrial development,16.742498,-62.187366,0.005,1,2
+Malta,industrial development,35.937496,14.375416,0.003,1,2
+Montenegro,industrial development,42.708678,19.37439,0.003,1,2
+French Polynesia,industrial development,-17.679742,-149.406843,0.002,1,2
+Canada,industrial development,56.130366,-106.346771,0.002,1,2
+Cook Islands,industrial development,-21.236736,-159.777671,0.001,1,2
+Kosovo,industrial development,42.602636,20.902977,0.001,1,2
+Tuvalu,industrial development,-7.109535,177.64933,0.001,1,2
+Anguilla,industrial development,18.220554,-63.068615,0.001,0.5,2
+Turks and Caicos Islands,industrial development,21.694025,-71.797928,0.001,0.5,2
+Timor-Leste,industrial development,-8.874217,125.727539,0.001,0.5,2
+Guadeloupe,industrial development,16.995971,-62.067641,0.000,0.5,2
+Comoros,industrial development,-11.875001,43.872219,0.000,0.5,2
+Marshall Islands,industrial development,7.131474,171.184478,0.000,0.5,2

@@ -1,0 +1,159 @@
+country,purpose,latitude,longitude,amount,radius,color
+Brazil,general budget support,-14.235004,-51.92528,114.491,6,1
+Argentina,general budget support,-38.416097,-63.616672,89.877,6,1
+Mexico,general budget support,23.634501,-102.552784,77.215,6,1
+Turkey,general budget support,38.963745,35.243322,61.920,6,1
+Israel,general budget support,31.046051,34.851612,44.199,6,1
+Indonesia,general budget support,-0.789275,113.921327,37.012,6,1
+Russia,general budget support,61.52401,105.318756,27.958,6,1
+Poland,general budget support,51.919438,19.145136,22.787,6,1
+Ukraine,general budget support,48.379433,31.16558,20.255,6,1
+Greece,general budget support,39.074208,21.824312,18.460,6,1
+Portugal,general budget support,39.399872,-8.224454,16.229,6,2
+Pakistan,general budget support,30.375321,69.345116,15.983,6,2
+India,general budget support,20.593684,78.96288,15.921,6,2
+Papua New Guinea,general budget support,-6.314993,143.95555,15.639,6,2
+Colombia,general budget support,4.570868,-74.297333,14.791,6,2
+Romania,general budget support,45.943161,24.96676,13.626,6,2
+Thailand,general budget support,15.870032,100.992541,12.959,6,2
+Hungary,general budget support,47.162494,19.503304,11.534,6,2
+Tanzania,general budget support,-6.369028,34.888822,11.284,6,2
+Philippines,general budget support,12.879721,121.774017,10.215,6,2
+Egypt,general budget support,26.820553,30.802498,9.096,5,2
+Ghana,general budget support,7.946527,-1.023194,8.597,5,2
+Uruguay,general budget support,-32.522779,-55.765835,7.757,5,2
+Mozambique,general budget support,-18.665695,35.529562,7.191,5,2
+Venezuela,general budget support,6.42375,-66.58973,7.169,5,2
+Zambia,general budget support,-13.133897,27.849332,6.575,5,2
+Peru,general budget support,-9.189967,-75.015152,6.185,5,2
+Uganda,general budget support,1.373333,32.290275,6.101,5,2
+Kenya,general budget support,-0.023559,37.906193,5.874,5,2
+Chile,general budget support,-35.675147,-71.542969,5.251,5,2
+Cameroon,general budget support,7.369722,12.354722,5.173,5,2
+Morocco,general budget support,31.791702,-7.09262,4.788,4,2
+Senegal,general budget support,14.497401,-14.452362,4.746,4,2
+Bangladesh,general budget support,23.684994,90.356331,4.531,4,2
+Nigeria,general budget support,9.081999,8.675277,4.346,4,2
+Burkina Faso,general budget support,12.238333,-1.561593,4.212,4,2
+Sri Lanka,general budget support,7.873054,80.771797,4.097,4,2
+Mali,general budget support,17.570692,-3.996166,3.911,4,2
+Jordan,general budget support,30.585164,36.238414,3.896,4,2
+Bulgaria,general budget support,42.733883,25.48583,3.768,4,2
+Ethiopia,general budget support,9.145,40.489673,3.684,4,2
+Malawi,general budget support,-13.254308,34.301525,3.647,4,2
+Zimbabwe,general budget support,-19.015438,29.154857,3.597,4,2
+Jamaica,general budget support,18.109581,-77.297508,3.137,4,2
+Rwanda,general budget support,-1.940278,29.873888,3.017,4,2
+Costa Rica,general budget support,9.748917,-83.753428,3.011,4,2
+El Salvador,general budget support,13.794185,-88.89653,3.009,4,2
+Dominican Republic,general budget support,18.735693,-70.162651,2.962,4,2
+Ecuador,general budget support,-1.831239,-78.183406,2.899,4,2
+Madagascar,general budget support,-18.766947,46.869107,2.878,4,2
+Algeria,general budget support,28.033886,1.659626,2.797,4,2
+Tunisia,general budget support,33.886917,9.537499,2.493,4,2
+Niger,general budget support,17.607789,8.081666,2.406,4,2
+Honduras,general budget support,15.199999,-86.241905,2.400,4,2
+Benin,general budget support,9.30769,2.315834,2.347,4,2
+Nicaragua,general budget support,12.865416,-85.207229,2.057,4,2
+Croatia,general budget support,45.1,15.2,1.948,4,2
+Guatemala,general budget support,15.783471,-90.230759,1.940,4,2
+Sierra Leone,general budget support,8.460555,-11.779889,1.923,4,2
+Bolivia,general budget support,-16.290154,-63.588653,1.889,4,2
+Georgia,general budget support,42.315407,43.356892,1.869,4,2
+Togo,general budget support,8.619543,0.824782,1.763,4,2
+Panama,general budget support,8.537981,-80.782127,1.748,4,2
+Liberia,general budget support,6.428055,-9.429499,1.723,4,2
+Gabon,general budget support,-0.803689,11.609444,1.663,4,2
+Burundi,general budget support,-3.373056,29.918886,1.613,4,2
+Afghanistan,general budget support,33.93911,67.709953,1.577,4,2
+Sudan,general budget support,12.862807,30.217636,1.534,4,2
+Latvia,general budget support,56.879635,24.603189,1.465,3,2
+China,general budget support,35.86166,104.195397,1.449,3,2
+Haiti,general budget support,18.971187,-72.285215,1.425,3,2
+Armenia,general budget support,40.069099,45.038189,1.414,3,2
+Moldova,general budget support,47.411631,28.369885,1.383,3,2
+Belarus,general budget support,53.709807,27.953389,1.334,3,2
+Guinea,general budget support,9.945587,-9.696645,1.285,3,2
+Kazakhstan,general budget support,48.019573,66.923684,1.278,3,2
+Czech Republic,general budget support,49.817492,15.472962,1.227,3,2
+Solomon Islands,general budget support,-9.64571,160.156194,1.200,3,2
+Chad,general budget support,15.454166,18.732207,1.184,3,2
+Central African Republic,general budget support,6.611111,20.939444,1.151,3,2
+Yemen,general budget support,15.552727,48.516388,1.032,3,2
+Mauritius,general budget support,-20.348404,57.552152,1.025,3,2
+Mauritania,general budget support,21.00789,-10.940835,0.995,3,2
+Dominica,general budget support,15.414999,-61.370976,0.961,3,2
+Lebanon,general budget support,33.854721,35.862285,0.947,3,2
+Guyana,general budget support,4.860416,-58.93018,0.945,3,2
+Iceland,general budget support,64.963051,-19.020835,0.929,3,2
+Laos,general budget support,19.85627,102.495496,0.912,3,2
+Nepal,general budget support,28.394857,84.124008,0.888,3,2
+Lithuania,general budget support,55.169438,23.881275,0.868,3,2
+Iraq,general budget support,33.223191,43.679291,0.816,3,2
+Serbia,general budget support,44.016521,21.005859,0.802,3,2
+Cambodia,general budget support,12.565679,104.990963,0.800,3,2
+Cape Verde,general budget support,16.002082,-24.013197,0.700,3,2
+Angola,general budget support,-11.202692,17.873887,0.658,3,2
+Suriname,general budget support,3.919305,-56.027783,0.627,3,2
+Tajikistan,general budget support,38.861034,71.276093,0.621,3,2
+Mongolia,general budget support,46.862496,103.846656,0.547,3,2
+Gambia,general budget support,13.443182,-15.310139,0.485,2,2
+Lesotho,general budget support,-29.609988,28.233608,0.481,2,2
+Azerbaijan,general budget support,40.143105,47.576927,0.480,2,2
+Guinea-Bissau,general budget support,11.803749,-15.180413,0.443,2,2
+Albania,general budget support,41.153332,20.168331,0.432,2,2
+Somalia,general budget support,5.152149,46.199616,0.425,2,2
+Djibouti,general budget support,11.825138,42.590275,0.393,2,2
+Vanuatu,general budget support,-15.376706,166.959158,0.320,2,2
+Marshall Islands,general budget support,7.131474,171.184478,0.267,2,2
+South Africa,general budget support,-30.559482,22.937506,0.263,2,2
+Comoros,general budget support,-11.875001,43.872219,0.259,2,2
+Belgium,general budget support,50.503887,4.469936,0.243,2,2
+Paraguay,general budget support,-23.442503,-58.443832,0.214,2,2
+New Caledonia,general budget support,-20.904305,165.618042,0.211,2,2
+Norway,general budget support,60.472024,8.468946,0.203,2,2
+Bhutan,general budget support,27.514162,90.433601,0.181,2,2
+Estonia,general budget support,58.595272,25.013607,0.177,2,2
+Tokelau,general budget support,-8.967363,-171.855881,0.156,2,2
+Equatorial Guinea,general budget support,1.650801,10.267895,0.148,2,2
+Barbados,general budget support,13.193887,-59.543198,0.141,2,2
+Timor-Leste,general budget support,-8.874217,125.727539,0.136,2,2
+Palau,general budget support,7.51498,134.58252,0.132,2,2
+Niue,general budget support,-19.054445,-169.867233,0.131,2,2
+Seychelles,general budget support,-4.679574,55.491977,0.130,2,2
+Grenada,general budget support,12.262776,-61.604171,0.116,2,2
+Eritrea,general budget support,15.179384,39.782334,0.116,2,2
+French Polynesia,general budget support,-17.679742,-149.406843,0.108,2,2
+Aruba,general budget support,12.52111,-69.968338,0.102,2,2
+Nauru,general budget support,-0.522778,166.931503,0.100,2,2
+Malta,general budget support,35.937496,14.375416,0.093,1,2
+Belize,general budget support,17.189877,-88.49765,0.091,1,2
+Turks and Caicos Islands,general budget support,21.694025,-71.797928,0.087,1,2
+Oman,general budget support,21.512583,55.923255,0.086,1,2
+Samoa,general budget support,-13.759029,-172.104629,0.083,1,2
+Italy,general budget support,41.87194,12.56738,0.081,1,2
+Cook Islands,general budget support,-21.236736,-159.777671,0.076,1,2
+Kosovo,general budget support,42.602636,20.902977,0.074,1,2
+Libya,general budget support,26.3351,17.228331,0.068,1,2
+Tuvalu,general budget support,-7.109535,177.64933,0.067,1,2
+Netherlands Antilles,general budget support,12.226079,-69.060087,0.062,1,2
+Kiribati,general budget support,-3.370417,-168.734039,0.058,1,2
+Montserrat,general budget support,16.742498,-62.187366,0.052,1,2
+Tonga,general budget support,-21.178986,-175.198242,0.052,1,2
+Montenegro,general budget support,42.708678,19.37439,0.037,1,2
+Uzbekistan,general budget support,41.377491,64.585262,0.030,1,2
+Anguilla,general budget support,18.220554,-63.068615,0.028,1,2
+Mayotte,general budget support,-12.8275,45.166244,0.027,1,2
+Swaziland,general budget support,-26.522503,31.465866,0.026,1,2
+Maldives,general budget support,3.202778,73.22068,0.023,1,2
+Namibia,general budget support,-22.95764,18.49041,0.020,1,2
+Cyprus,general budget support,35.126413,33.429859,0.016,1,2
+Cuba,general budget support,21.521757,-77.781167,0.012,1,2
+Fiji,general budget support,-16.578193,179.414413,0.011,1,2
+Botswana,general budget support,-22.328474,24.684866,0.008,1,2
+Malaysia,general budget support,4.210484,101.975766,0.006,1,2
+Iran,general budget support,32.427908,53.688046,0.001,1,2
+Syria,general budget support,34.802075,38.996815,0.001,0.5,2
+Bahamas,general budget support,25.03428,-77.39628,0.000,0.5,2
+Turkmenistan,general budget support,38.969719,59.556278,0.000,0.5,2
+Slovenia,general budget support,46.151241,14.995463,0.000,0.5,2

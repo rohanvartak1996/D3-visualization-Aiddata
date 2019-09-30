@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    
+    body {
+            font-family: Helvetica, Arial, sans-serif
+        }
+
+        h1 {
+            background-color: #2a5599;
+            color: white;
+            padding: 10px;
+        }
+    
+    h2 {
+        font-size: 20px;
+        font: Arial;
+    }
+
+.bar--positive {
+  fill: steelblue;
+}
+
+.bar--negative {
+  fill: crimson;
+}
+    
+    .svg text{
+        font: 1px sans-serif;
+    }
+
+.axis text {
+  font: 10px sans-serif;
+}
+    
+    .grid .tick {
+    stroke: #f5f5f5;
+    opacity: 0.1;
+}
+.grid path {
+      stroke-width: 0;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+    svg {
+        border: solid 1px #a9a9a9;
+    }
+    
+    .mainView{
+            display: flex;
+            flex-direction: row;
+        }
+
+    .tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 120px;					
+    height: 30px;					
+    padding: 2px;				
+    font: 13px sans-serif;		
+    background: #dcdcdc;	
+    border: solid 1px #f5f5f5;		
+    border-radius: 3px;			
+    pointer-events: none;			
+}
+    
+</style>
+<body>
+    <h1>Visualization 1</h1>
+    <h2>The Amount donated and received by countries.</h2>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script>
+
+var margin = {top: 20, right: 30, bottom: 40, left: 170},
+    width = 1000 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
+
+var x = d3.scale.linear()
+    .range([0, width]);
+
+var y = d3.scale.ordinal()
+    .rangeRoundBands([0, height], 0.1);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom")
+    .tickFormat(Math.abs);
+    
+function make_xaxis() {
+    return d3.svg.axis()
+            .scale(x)
+            .orient("bottom");
+}
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .tickPadding(6);
+    
+var myAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .tickSize(0);
+    
+var tooltip = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden");
+    
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.csv("data.csv", type, function(error, data) {
+  x.domain(d3.extent(data, function(d) { return d.value; })).nice();
+  y.domain(data.map(function(d) { return d.name; }));
+    
+
+svg.selectAll(".bar")
+      .data(data)
+    .enter().append("rect")
+      .attr("class", function(d) { return "bar bar--" + (d.value < 0 ? "negative" : "positive"); })
+      .attr("x", function(d) { return x(Math.min(0, d.value)); })
+      .attr("y", function(d) { return y(d.name); })
+      .attr("width", function(d) { return Math.abs(x(d.value) - x(0)); })
+      .attr("height", y.rangeBand())
+    .on("mouseover", function(d){return tooltip.style("visibility", "visible").html(d.name + "<br/>" + "$" + Math.abs(d.value) + " B");})
+    .on("mousemove", function(d){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px")
+                                                .html(d.name + "<br/>" + "$" + Math.abs(d.value) + " B");})
+    .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+      
+    
+svg.append("text")
+    .attr('x', -(height / 2) + 70)
+    .attr('y', -150)
+    .attr('transform', 'rotate(-90)')
+    .attr('text-anchor', 'middle')
+    .text('Countries')
+
+svg.append('text')
+    .attr('x', width / 2 + 40)
+    .attr('y', height + 35)
+    .attr('text-anchor', 'middle')
+    .text('Amount (in Billion $)')
+    
+svg.append("g")
+    .attr("class", "grid")
+    .attr("transform", "translate(0," + height + ")")
+    .call(make_xaxis()
+         .tickSize(-height, 0, 0)
+         .tickFormat(""))
+  
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  var middleAxis = svg.append("g")
+      .attr("class", "my axis")
+      .attr("transform", "translate(" + x(0) + ",0)")
+      .call(myAxis);
+    
+    middleAxis.selectAll("text").remove();
+    
+    svg.append("g")
+      .attr("class", "y axis")
+      .attr("transform", "translate(" + ",0)")
+      .call(yAxis);
+});
+    
+svg.append("circle").attr("cx",width - 55).attr("cy",10).attr("r", 6).style("fill", "#4682b4")
+svg.append("circle").attr("cx",width - 55).attr("cy",30).attr("r", 6).style("fill", "#dc143c")
+svg.append("text").attr("x", width - 45).attr("y", 10).text("Received").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", width - 45).attr("y", 30).text("Donated").style("font-size", "15px").attr("alignment-baseline","middle")
+
+function type(d) {
+  d.value = +d.value;
+  return d;
+}
+
+</script>
+    <h4>Question: How do the How do the countries compare in terms of how much they receive and donate from other countries? Are there countries that donate much more than they receive or receive much more than they donate?</h4>
+    <h4>Explanation: In this visualization I have considered the top 30 countires that donated and top 30 countires that receive.
+    We see that developing countries like India, Brazil, Indonesia, China, etc. receive the maximum amount of aid.
+    Whereas developed nations like United States, Germany, Japan, France, etc. give more donations. 
+    The comparison between countries that donate more and that receive more is easy in this graph as there are 2 axis, one for donated 
+    amount and one for received amount. This allows us to compare large number of countries in a single chart.
+    The diverging bars, along with different color for donated amount and received amount help to easily distinguish between the countries
+    and answer the question. I have not considered all the countries as the amount scale is in billions and some of the 
+    countries have received or donated in millions which would not have a visible bar on the chart.
+    So to maintain relevance and answer the question effectively, I have only considered the top 30 donating and receiving countries.
+    So counntries like India, Brazil, Indonesia, Mexico, China, Turkey receive much more than they donate and USA, Japan
+    France, Germany, United Kingdom donate much more than they receive.</h4>

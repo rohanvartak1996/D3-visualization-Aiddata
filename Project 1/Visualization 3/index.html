@@ -1,0 +1,236 @@
+<html>
+    
+<script src="d3.js"></script>
+
+<head>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif
+        }
+
+        h1 {
+            background-color: #2a5599;
+            color: white;
+            padding: 10px;
+        }
+        
+        h2 { 
+          font-size: 15px;
+        }
+        
+        svg {
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            margin-right: 5px;
+        }
+   
+        .mainView {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        #AirlinesChart{
+            width: 200px;
+        }
+        
+         .tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 120px;					
+    height: 45px;					
+    padding: 2px;				
+    font: 13px sans-serif;		
+    background: #dcdcdc;	
+    border: solid 1px #f5f5f5;		
+    border-radius: 3px;			
+    pointer-events: none;			
+}
+      
+        
+    </style>
+</head>
+
+<body>
+    <script>
+    let store = {}
+    
+    function loadData() {
+    return Promise.all([
+        d3.json("contries.geo.json"),
+        d3.csv("aid_purpose4_agri2.csv"),
+        d3.csv("aid_purpose4_gene2.csv"),
+        d3.csv("aid_purpose4_indu2.csv"),
+        d3.csv("aid_purpose4_multi2.csv"),
+        d3.csv("aid_purpose4_road2.csv"),
+    ]).then(datasets => {
+        store.geoJSON = datasets[0];
+        store.agriculture = datasets[1];
+        store.general = datasets[2];
+        store.industry = datasets[3];
+        store.multi = datasets[4];
+        store.road = datasets[5];
+        return store;
+    })
+    }
+        
+        function getMapConfig(){
+  let width = 440;
+  let height = 280;
+  let container1 = d3.select('#Map1')
+     container1
+        .attr("width", width)
+        .attr("height", height)
+  let container2 = d3.select('#Map2')
+     container2
+        .attr("width", width)
+        .attr("height", height)
+  let container3 = d3.select('#Map3')
+     container3
+        .attr("width", width)
+        .attr("height", height)
+  let container4 = d3.select('#Map4')
+     container4
+        .attr("width", width)
+        .attr("height", height)
+  let container5 = d3.select('#Map5')
+     container5
+        .attr("width", width)
+        .attr("height", height)
+  let container6 = d3.select('#Map6')
+     container6
+        .attr("width", 250)
+        .attr("height", 170)
+  return {width, height, container1, container2, container3, container4, container5, container6}
+}
+        
+        function getMapProjection(config) {
+  let {width, height} = config;
+  let projection = d3.geoMercator()//TODO: Create a projection of type Mercator.
+  projection.scale(85)
+            .translate([width / 2, height / 2 + 20])
+            
+  store.mapProjection = projection;
+  return projection;
+}
+        function drawBaseMap(container, countries, projection){
+  let path = d3.geoPath().projection(projection)//TODO: create a geoPath generator and set its projection to be the projection passed as parameter.
+  
+  container.selectAll("path").data(countries)
+      .enter().append("path")
+      .attr("d", path)//TODO: use the path generator to draw each country )
+      .attr("stroke", "#ccc")
+      .attr("fill", "#eee")
+  }
+        function drawMap(geoJeon) {
+    let config = getMapConfig();
+    let projection = getMapProjection(config)
+    drawBaseMap(config.container1, geoJeon.features, projection)
+    drawBaseMap(config.container2, geoJeon.features, projection)
+    drawBaseMap(config.container3, geoJeon.features, projection)
+    drawBaseMap(config.container4, geoJeon.features, projection)
+    drawBaseMap(config.container5, geoJeon.features, projection)
+}
+        
+        
+        function drawAirports(airports, container, color) {
+  let config = getMapConfig(); //get the config
+  let projection = getMapProjection(config) //get the projection
+  //let container1 = config.container1;
+            
+var tooltip = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden");
+        
+  let circles = container.selectAll("circle");
+            
+        circles.data(airports)
+                .enter()
+                .append("circle")
+                .attr("r", function(d) { return (d.radius*1.2);})
+                .attr("cx", d => projection([+d.longitude, +d.latitude])[0])
+                .attr("cy", d => projection([+d.longitude, +d.latitude])[1])
+                .attr("fill", color)
+                .on("mouseover", function(d){return tooltip.style("visibility", "visible").html(d.country);})
+                .on("mousemove", function(d){return tooltip.style("top", (d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px")
+                                                .html(d.country + "<br/>" + "$" + (d.amount) + "B");})
+                .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+            
+            
+    
+}
+        
+function drawLegend(container){
+    
+    
+    container.append("circle").attr("r", 10).attr("cx", 25).attr("cy", 20).attr("fill", "Navy");
+    container.append("text").attr("x", 45).attr("y", 22).text("Agricultural Development").style("font-size", "15px").attr("alignment-baseline","middle");
+    container.append("circle").attr("r", 10).attr("cx", 25).attr("cy", 50).attr("fill", "MediumVioletRed");
+    container.append("text").attr("x", 45).attr("y", 52).text("General Budget Support").style("font-size", "15px").attr("alignment-baseline","middle");
+    container.append("circle").attr("r", 10).attr("cx", 25).attr("cy", 80).attr("fill", "Orange");
+    container.append("text").attr("x", 45).attr("y", 82).text("Industrial Development").style("font-size", "15px").attr("alignment-baseline","middle");
+    container.append("circle").attr("r", 10).attr("cx", 25).attr("cy", 110).attr("fill", "Crimson");
+    container.append("text").attr("x", 45).attr("y", 112).text("Multisector Aid").style("font-size", "15px").attr("alignment-baseline","middle");
+    container.append("circle").attr("r", 10).attr("cx", 25).attr("cy", 140).attr("fill", "Green");
+    container.append("text").attr("x", 45).attr("y", 142).text("Road Transport").style("font-size", "15px").attr("alignment-baseline","middle");
+}
+
+        
+        
+    function showData() {
+        
+        let config = getMapConfig();
+        drawMap(store.geoJSON) 
+        drawAirports(store.agriculture, config.container1, 'Navy')
+        drawAirports(store.general, config.container2, 'MediumVioletRed')
+        drawAirports(store.industry, config.container3, 'Orange')
+        drawAirports(store.multi, config.container4, 'Crimson')
+        drawAirports(store.road, config.container5, 'Green')
+        drawLegend(config.container6)
+    }
+        loadData().then(showData);
+    </script>
+    <h1>Visualization 3</h1>
+    <h3>Geographical Distribution of Aid by the Purpose of Disbursement</h3>
+    <div class="mainView">
+        <div>
+            <h2>Agricultural Development</h2>
+            <svg id="Map1"></svg>
+        </div>
+        <div>
+            <h2>General Budget Support</h2>
+            <svg id="Map2"></svg>
+        </div>
+        <div>
+            <h2>Industrial Development</h2>
+            <svg id="Map3"></svg>
+        </div>
+    </div>
+    <div class="mainView">
+        <div>
+            <h2>Multisector Aid</h2>
+            <svg id="Map4"></svg>
+        </div>
+        <div>
+            <h2>Road Transport</h2>
+            <svg id="Map5"></svg>
+        </div>
+        <div>
+            <h2>Legend</h2>
+            <svg id="Map6"></svg>
+        </div>
+    </div>
+    <h2>Question: Are there any major differences in how the top 5 most frequent purposes of disbursements distribute geographically in terms of  countries that receive donations? Are there countries that tend to receive more of certain type of donations than others?</h2>
+    <h2>Explanation: Here I have faceted the map 5 times for the top 5 purposes of disbursement. I have considered the all countries
+    for each purpose of disbursement. The color encodes the purpose and the size encodes the amount donated. We see that 
+    there are no major differences in the geographical distribution of the aid for the top 5 purposes. The overall pattern is the same for
+    all the 5 purposes. In the size encoding we do see that some countries get more aid than others, but on a general trend we see that
+    countries like India, China, Brazil, Argentia, Indonesia, Columbia, Egypt, Turkey, Pakistan, Thailand, Russia, get most of the aid and 
+    the aid is almost evenly distributed, with developing nations getting the majority of the aid and small nations getting smaller protions.</h2>
+    
+</body>
+
+</html>

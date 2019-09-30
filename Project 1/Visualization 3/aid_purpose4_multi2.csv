@@ -1,0 +1,172 @@
+country,purpose,latitude,longitude,amount,radius,color
+Indonesia,multisector aid,-0.789275,113.921327,8.927,5,1
+Turkey,multisector aid,38.963745,35.243322,7.602,5,1
+Argentina,multisector aid,-38.416097,-63.616672,7.150,5,1
+Colombia,multisector aid,4.570868,-74.297333,6.932,5,1
+India,multisector aid,20.593684,78.96288,5.206,5,1
+Brazil,multisector aid,-14.235004,-51.92528,4.840,4,1
+Peru,multisector aid,-9.189967,-75.015152,4.674,4,1
+China,multisector aid,35.86166,104.195397,4.461,4,1
+Pakistan,multisector aid,30.375321,69.345116,4.079,4,1
+Romania,multisector aid,45.943161,24.96676,3.829,4,1
+Bangladesh,multisector aid,23.684994,90.356331,3.309,4,2
+Jordan,multisector aid,30.585164,36.238414,3.156,4,2
+Iraq,multisector aid,33.223191,43.679291,3.127,4,2
+Tunisia,multisector aid,33.886917,9.537499,3.073,4,2
+Egypt,multisector aid,26.820553,30.802498,3.003,4,2
+Morocco,multisector aid,31.791702,-7.09262,2.641,4,2
+Afghanistan,multisector aid,33.93911,67.709953,2.625,4,2
+Mexico,multisector aid,23.634501,-102.552784,2.539,4,2
+Poland,multisector aid,51.919438,19.145136,2.185,4,2
+Philippines,multisector aid,12.879721,121.774017,2.134,4,2
+Serbia,multisector aid,44.016521,21.005859,2.029,4,2
+Italy,multisector aid,41.87194,12.56738,2.024,4,2
+Russia,multisector aid,61.52401,105.318756,1.819,4,2
+Thailand,multisector aid,15.870032,100.992541,1.814,4,2
+Ukraine,multisector aid,48.379433,31.16558,1.784,4,2
+South Africa,multisector aid,-30.559482,22.937506,1.759,4,2
+Algeria,multisector aid,28.033886,1.659626,1.669,4,2
+Netherlands,multisector aid,52.132633,5.291266,1.614,4,2
+Bolivia,multisector aid,-16.290154,-63.588653,1.595,4,2
+Chile,multisector aid,-35.675147,-71.542969,1.559,4,2
+Ethiopia,multisector aid,9.145,40.489673,1.480,3,2
+Tanzania,multisector aid,-6.369028,34.888822,1.470,3,2
+Zambia,multisector aid,-13.133897,27.849332,1.451,3,2
+Mozambique,multisector aid,-18.665695,35.529562,1.427,3,2
+Sudan,multisector aid,12.862807,30.217636,1.288,3,2
+Nigeria,multisector aid,9.081999,8.675277,1.266,3,2
+Ecuador,multisector aid,-1.831239,-78.183406,1.244,3,2
+Bulgaria,multisector aid,42.733883,25.48583,1.222,3,2
+Guatemala,multisector aid,15.783471,-90.230759,1.222,3,2
+Australia,multisector aid,-25.274398,133.775136,1.217,3,2
+Uruguay,multisector aid,-32.522779,-55.765835,1.206,3,2
+Nicaragua,multisector aid,12.865416,-85.207229,1.155,3,2
+Venezuela,multisector aid,6.42375,-66.58973,1.128,3,2
+Sri Lanka,multisector aid,7.873054,80.771797,1.052,3,2
+Senegal,multisector aid,14.497401,-14.452362,1.022,3,2
+El Salvador,multisector aid,13.794185,-88.89653,0.937,3,2
+Papua New Guinea,multisector aid,-6.314993,143.95555,0.901,3,2
+Honduras,multisector aid,15.199999,-86.241905,0.893,3,2
+Yemen,multisector aid,15.552727,48.516388,0.850,3,2
+Hungary,multisector aid,47.162494,19.503304,0.849,3,2
+Mali,multisector aid,17.570692,-3.996166,0.833,3,2
+Croatia,multisector aid,45.1,15.2,0.822,3,2
+Madagascar,multisector aid,-18.766947,46.869107,0.806,3,2
+Kenya,multisector aid,-0.023559,37.906193,0.797,3,2
+Costa Rica,multisector aid,9.748917,-83.753428,0.791,3,2
+Martinique,multisector aid,14.641528,-61.024174,0.788,3,2
+Panama,multisector aid,8.537981,-80.782127,0.766,3,2
+Niger,multisector aid,17.607789,8.081666,0.758,3,2
+Somalia,multisector aid,5.152149,46.199616,0.753,3,2
+Haiti,multisector aid,18.971187,-72.285215,0.738,3,2
+Malawi,multisector aid,-13.254308,34.301525,0.706,3,2
+Ghana,multisector aid,7.946527,-1.023194,0.681,3,2
+Uganda,multisector aid,1.373333,32.290275,0.650,3,2
+Zimbabwe,multisector aid,-19.015438,29.154857,0.649,3,2
+Jamaica,multisector aid,18.109581,-77.297508,0.620,3,2
+Burkina Faso,multisector aid,12.238333,-1.561593,0.618,3,2
+Albania,multisector aid,41.153332,20.168331,0.600,3,2
+Cameroon,multisector aid,7.369722,12.354722,0.573,3,2
+Guadeloupe,multisector aid,16.995971,-62.067641,0.558,3,2
+Kazakhstan,multisector aid,48.019573,66.923684,0.557,3,2
+Rwanda,multisector aid,-1.940278,29.873888,0.536,3,2
+New Caledonia,multisector aid,-20.904305,165.618042,0.491,2,2
+Mauritania,multisector aid,21.00789,-10.940835,0.487,2,2
+Georgia,multisector aid,42.315407,43.356892,0.486,2,2
+Lebanon,multisector aid,33.854721,35.862285,0.486,2,2
+Nepal,multisector aid,28.394857,84.124008,0.474,2,2
+Chad,multisector aid,15.454166,18.732207,0.472,2,2
+Botswana,multisector aid,-22.328474,24.684866,0.464,2,2
+Uzbekistan,multisector aid,41.377491,64.585262,0.453,2,2
+Malaysia,multisector aid,4.210484,101.975766,0.453,2,2
+Paraguay,multisector aid,-23.442503,-58.443832,0.445,2,2
+Guinea,multisector aid,9.945587,-9.696645,0.441,2,2
+Angola,multisector aid,-11.202692,17.873887,0.439,2,2
+Azerbaijan,multisector aid,40.143105,47.576927,0.433,2,2
+Cambodia,multisector aid,12.565679,104.990963,0.432,2,2
+Laos,multisector aid,19.85627,102.495496,0.429,2,2
+Burundi,multisector aid,-3.373056,29.918886,0.396,2,2
+Suriname,multisector aid,3.919305,-56.027783,0.395,2,2
+Armenia,multisector aid,40.069099,45.038189,0.390,2,2
+Dominican Republic,multisector aid,18.735693,-70.162651,0.385,2,2
+Lesotho,multisector aid,-29.609988,28.233608,0.384,2,2
+Benin,multisector aid,9.30769,2.315834,0.373,2,2
+Iran,multisector aid,32.427908,53.688046,0.372,2,2
+Oman,multisector aid,21.512583,55.923255,0.361,2,2
+Marshall Islands,multisector aid,7.131474,171.184478,0.358,2,2
+French Polynesia,multisector aid,-17.679742,-149.406843,0.351,2,2
+Timor-Leste,multisector aid,-8.874217,125.727539,0.350,2,2
+Guyana,multisector aid,4.860416,-58.93018,0.339,2,2
+Mauritius,multisector aid,-20.348404,57.552152,0.283,2,2
+Mongolia,multisector aid,46.862496,103.846656,0.267,2,2
+Sierra Leone,multisector aid,8.460555,-11.779889,0.264,2,2
+Bahrain,multisector aid,25.930414,50.637772,0.238,2,2
+Namibia,multisector aid,-22.95764,18.49041,0.235,2,2
+Moldova,multisector aid,47.411631,28.369885,0.224,2,2
+Israel,multisector aid,31.046051,34.851612,0.216,2,2
+Cape Verde,multisector aid,16.002082,-24.013197,0.214,2,2
+Guinea-Bissau,multisector aid,11.803749,-15.180413,0.208,2,2
+Lithuania,multisector aid,55.169438,23.881275,0.197,2,2
+Syria,multisector aid,34.802075,38.996815,0.187,2,2
+Slovenia,multisector aid,46.151241,14.995463,0.180,2,2
+Togo,multisector aid,8.619543,0.824782,0.179,2,2
+Kosovo,multisector aid,42.602636,20.902977,0.175,2,2
+Netherlands Antilles,multisector aid,12.226079,-69.060087,0.175,2,2
+Singapore,multisector aid,1.352083,103.819836,0.166,2,2
+Tajikistan,multisector aid,38.861034,71.276093,0.166,2,2
+Latvia,multisector aid,56.879635,24.603189,0.163,2,2
+Gambia,multisector aid,13.443182,-15.310139,0.163,2,2
+Djibouti,multisector aid,11.825138,42.590275,0.160,2,2
+Bhutan,multisector aid,27.514162,90.433601,0.155,2,2
+Liberia,multisector aid,6.428055,-9.429499,0.155,2,2
+Gabon,multisector aid,-0.803689,11.609444,0.154,2,2
+Belize,multisector aid,17.189877,-88.49765,0.152,2,2
+Barbados,multisector aid,13.193887,-59.543198,0.146,2,2
+Palau,multisector aid,7.51498,134.58252,0.141,2,2
+Libya,multisector aid,26.3351,17.228331,0.132,2,2
+Greece,multisector aid,39.074208,21.824312,0.122,2,2
+Central African Republic,multisector aid,6.611111,20.939444,0.121,2,2
+Solomon Islands,multisector aid,-9.64571,160.156194,0.119,2,2
+Eritrea,multisector aid,15.179384,39.782334,0.114,2,2
+Turkmenistan,multisector aid,38.969719,59.556278,0.109,2,2
+Finland,multisector aid,61.92411,25.748151,0.101,2,2
+Cuba,multisector aid,21.521757,-77.781167,0.100,1,2
+Vanuatu,multisector aid,-15.376706,166.959158,0.093,1,2
+Kiribati,multisector aid,-3.370417,-168.734039,0.093,1,2
+Grenada,multisector aid,12.262776,-61.604171,0.093,1,2
+Swaziland,multisector aid,-26.522503,31.465866,0.089,1,2
+Fiji,multisector aid,-16.578193,179.414413,0.089,1,2
+Samoa,multisector aid,-13.759029,-172.104629,0.088,1,2
+Seychelles,multisector aid,-4.679574,55.491977,0.083,1,2
+Tonga,multisector aid,-21.178986,-175.198242,0.082,1,2
+Belarus,multisector aid,53.709807,27.953389,0.078,1,2
+Comoros,multisector aid,-11.875001,43.872219,0.074,1,2
+Czech Republic,multisector aid,49.817492,15.472962,0.073,1,2
+Montenegro,multisector aid,42.708678,19.37439,0.069,1,2
+Malta,multisector aid,35.937496,14.375416,0.064,1,2
+Dominica,multisector aid,15.414999,-61.370976,0.063,1,2
+Cyprus,multisector aid,35.126413,33.429859,0.060,1,2
+Bahamas,multisector aid,25.03428,-77.39628,0.057,1,2
+Japan,multisector aid,36.204824,138.252924,0.057,1,2
+Turks and Caicos Islands,multisector aid,21.694025,-71.797928,0.051,1,2
+Equatorial Guinea,multisector aid,1.650801,10.267895,0.049,1,2
+Gibraltar,multisector aid,36.137741,-5.345374,0.048,1,2
+Estonia,multisector aid,58.595272,25.013607,0.046,1,2
+Aruba,multisector aid,12.52111,-69.968338,0.045,1,2
+Saudi Arabia,multisector aid,23.885942,45.079162,0.039,1,2
+Maldives,multisector aid,3.202778,73.22068,0.034,1,2
+Anguilla,multisector aid,18.220554,-63.068615,0.030,1,2
+Mayotte,multisector aid,-12.8275,45.166244,0.030,1,2
+Iceland,multisector aid,64.963051,-19.020835,0.028,1,2
+Montserrat,multisector aid,16.742498,-62.187366,0.024,1,2
+Cook Islands,multisector aid,-21.236736,-159.777671,0.020,1,2
+Niue,multisector aid,-19.054445,-169.867233,0.015,1,2
+Tuvalu,multisector aid,-7.109535,177.64933,0.013,1,2
+Nauru,multisector aid,-0.522778,166.931503,0.011,1,2
+Cayman Islands,multisector aid,19.513469,-80.566956,0.006,1,2
+Taiwan,multisector aid,23.69781,120.960515,0.006,1,2
+United Arab Emirates,multisector aid,23.424076,53.847818,0.000,0.5,2
+Kuwait,multisector aid,29.31166,47.481766,0.000,0.5,2
+Brunei,multisector aid,4.535277,114.727669,0.000,0.5,2
+Qatar,multisector aid,25.354826,51.183884,0.000,0.5,2
+United States,multisector aid,37.09024,-95.712891,0.000,0.5,2

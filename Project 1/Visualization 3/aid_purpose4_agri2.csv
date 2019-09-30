@@ -1,0 +1,162 @@
+country,purpose,latitude,longitude,amount,radius,color
+Mexico,agricultural development,23.634501,-102.552784,10.623,6,1
+India,agricultural development,20.593684,78.96288,7.462,5,1
+China,agricultural development,35.86166,104.195397,6.878,5,1
+Indonesia,agricultural development,-0.789275,113.921327,5.671,5,1
+Nigeria,agricultural development,9.081999,8.675277,4.631,4,1
+Bangladesh,agricultural development,23.684994,90.356331,4.514,4,1
+Morocco,agricultural development,31.791702,-7.09262,4.119,4,1
+Egypt,agricultural development,26.820553,30.802498,4.078,4,1
+Brazil,agricultural development,-14.235004,-51.92528,4.031,4,1
+Pakistan,agricultural development,30.375321,69.345116,3.872,4,1
+Sudan,agricultural development,12.862807,30.217636,3.711,4,2
+Peru,agricultural development,-9.189967,-75.015152,2.964,4,2
+Ethiopia,agricultural development,9.145,40.489673,2.926,4,2
+Philippines,agricultural development,12.879721,121.774017,2.808,4,2
+Tanzania,agricultural development,-6.369028,34.888822,2.744,4,2
+Kenya,agricultural development,-0.023559,37.906193,2.618,4,2
+Colombia,agricultural development,4.570868,-74.297333,2.512,4,2
+Mali,agricultural development,17.570692,-3.996166,2.306,4,2
+Cameroon,agricultural development,7.369722,12.354722,2.226,4,2
+Malaysia,agricultural development,4.210484,101.975766,2.171,4,2
+Senegal,agricultural development,14.497401,-14.452362,2.168,4,2
+Argentina,agricultural development,-38.416097,-63.616672,1.997,4,2
+Ghana,agricultural development,7.946527,-1.023194,1.995,4,2
+Uganda,agricultural development,1.373333,32.290275,1.866,4,2
+Ecuador,agricultural development,-1.831239,-78.183406,1.766,4,2
+Yemen,agricultural development,15.552727,48.516388,1.758,4,2
+Turkey,agricultural development,38.963745,35.243322,1.738,4,2
+Afghanistan,agricultural development,33.93911,67.709953,1.718,4,2
+Burkina Faso,agricultural development,12.238333,-1.561593,1.625,4,2
+Thailand,agricultural development,15.870032,100.992541,1.604,4,2
+Tunisia,agricultural development,33.886917,9.537499,1.600,4,2
+Zambia,agricultural development,-13.133897,27.849332,1.588,4,2
+Sri Lanka,agricultural development,7.873054,80.771797,1.575,4,2
+Venezuela,agricultural development,6.42375,-66.58973,1.406,3,2
+Bolivia,agricultural development,-16.290154,-63.588653,1.394,3,2
+Madagascar,agricultural development,-18.766947,46.869107,1.384,3,2
+Mozambique,agricultural development,-18.665695,35.529562,1.371,3,2
+Dominican Republic,agricultural development,18.735693,-70.162651,1.324,3,2
+Niger,agricultural development,17.607789,8.081666,1.323,3,2
+Honduras,agricultural development,15.199999,-86.241905,1.257,3,2
+Malawi,agricultural development,-13.254308,34.301525,1.247,3,2
+Chad,agricultural development,15.454166,18.732207,1.229,3,2
+Nepal,agricultural development,28.394857,84.124008,1.223,3,2
+Paraguay,agricultural development,-23.442503,-58.443832,1.099,3,2
+Romania,agricultural development,45.943161,24.96676,1.045,3,2
+Guinea,agricultural development,9.945587,-9.696645,1.043,3,2
+Somalia,agricultural development,5.152149,46.199616,1.035,3,2
+Algeria,agricultural development,28.033886,1.659626,0.964,3,2
+Papua New Guinea,agricultural development,-6.314993,143.95555,0.952,3,2
+Jamaica,agricultural development,18.109581,-77.297508,0.940,3,2
+Costa Rica,agricultural development,9.748917,-83.753428,0.930,3,2
+Haiti,agricultural development,18.971187,-72.285215,0.928,3,2
+El Salvador,agricultural development,13.794185,-88.89653,0.925,3,2
+Nicaragua,agricultural development,12.865416,-85.207229,0.909,3,2
+Zimbabwe,agricultural development,-19.015438,29.154857,0.899,3,2
+Burundi,agricultural development,-3.373056,29.918886,0.874,3,2
+Rwanda,agricultural development,-1.940278,29.873888,0.846,3,2
+Uruguay,agricultural development,-32.522779,-55.765835,0.829,3,2
+Guatemala,agricultural development,15.783471,-90.230759,0.824,3,2
+Hungary,agricultural development,47.162494,19.503304,0.769,3,2
+Guyana,agricultural development,4.860416,-58.93018,0.762,3,2
+Chile,agricultural development,-35.675147,-71.542969,0.750,3,2
+Cambodia,agricultural development,12.565679,104.990963,0.709,3,2
+Mauritania,agricultural development,21.00789,-10.940835,0.629,3,2
+Benin,agricultural development,9.30769,2.315834,0.621,3,2
+Togo,agricultural development,8.619543,0.824782,0.618,3,2
+Syria,agricultural development,34.802075,38.996815,0.581,3,2
+Poland,agricultural development,51.919438,19.145136,0.579,3,2
+Liberia,agricultural development,6.428055,-9.429499,0.548,3,2
+Laos,agricultural development,19.85627,102.495496,0.544,3,2
+Panama,agricultural development,8.537981,-80.782127,0.521,3,2
+Sierra Leone,agricultural development,8.460555,-11.779889,0.520,3,2
+Iran,agricultural development,32.427908,53.688046,0.485,2,2
+Central African Republic,agricultural development,6.611111,20.939444,0.474,2,2
+Jordan,agricultural development,30.585164,36.238414,0.430,2,2
+Angola,agricultural development,-11.202692,17.873887,0.394,2,2
+Gabon,agricultural development,-0.803689,11.609444,0.393,2,2
+Swaziland,agricultural development,-26.522503,31.465866,0.369,2,2
+Iraq,agricultural development,33.223191,43.679291,0.363,2,2
+Gambia,agricultural development,13.443182,-15.310139,0.331,2,2
+Armenia,agricultural development,40.069099,45.038189,0.328,2,2
+Portugal,agricultural development,39.399872,-8.224454,0.302,2,2
+Israel,agricultural development,31.046051,34.851612,0.297,2,2
+Uzbekistan,agricultural development,41.377491,64.585262,0.290,2,2
+Eritrea,agricultural development,15.179384,39.782334,0.281,2,2
+Belize,agricultural development,17.189877,-88.49765,0.278,2,2
+Lesotho,agricultural development,-29.609988,28.233608,0.262,2,2
+Botswana,agricultural development,-22.328474,24.684866,0.258,2,2
+Fiji,agricultural development,-16.578193,179.414413,0.215,2,2
+Tajikistan,agricultural development,38.861034,71.276093,0.211,2,2
+Bhutan,agricultural development,27.514162,90.433601,0.206,2,2
+Namibia,agricultural development,-22.95764,18.49041,0.201,2,2
+Guinea-Bissau,agricultural development,11.803749,-15.180413,0.201,2,2
+Georgia,agricultural development,42.315407,43.356892,0.193,2,2
+Azerbaijan,agricultural development,40.143105,47.576927,0.182,2,2
+Spain,agricultural development,40.463667,-3.74922,0.178,2,2
+Lebanon,agricultural development,33.854721,35.862285,0.178,2,2
+Bulgaria,agricultural development,42.733883,25.48583,0.176,2,2
+Russia,agricultural development,61.52401,105.318756,0.153,2,2
+Solomon Islands,agricultural development,-9.64571,160.156194,0.153,2,2
+Mauritius,agricultural development,-20.348404,57.552152,0.145,2,2
+Kazakhstan,agricultural development,48.019573,66.923684,0.135,2,2
+Mongolia,agricultural development,46.862496,103.846656,0.134,2,2
+Cape Verde,agricultural development,16.002082,-24.013197,0.134,2,2
+Dominica,agricultural development,15.414999,-61.370976,0.126,2,2
+Ireland,agricultural development,53.41291,-8.24389,0.123,2,2
+Albania,agricultural development,41.153332,20.168331,0.122,2,2
+Comoros,agricultural development,-11.875001,43.872219,0.120,2,2
+Equatorial Guinea,agricultural development,1.650801,10.267895,0.118,2,2
+Lithuania,agricultural development,55.169438,23.881275,0.111,2,2
+Cyprus,agricultural development,35.126413,33.429859,0.110,2,2
+Samoa,agricultural development,-13.759029,-172.104629,0.105,2,2
+South Africa,agricultural development,-30.559482,22.937506,0.105,2,2
+Ukraine,agricultural development,48.379433,31.16558,0.104,2,2
+Suriname,agricultural development,3.919305,-56.027783,0.097,1,2
+Timor-Leste,agricultural development,-8.874217,125.727539,0.095,1,2
+Greece,agricultural development,39.074208,21.824312,0.091,1,2
+Grenada,agricultural development,12.262776,-61.604171,0.080,1,2
+Latvia,agricultural development,56.879635,24.603189,0.076,1,2
+Moldova,agricultural development,47.411631,28.369885,0.075,1,2
+Serbia,agricultural development,44.016521,21.005859,0.068,1,2
+Cuba,agricultural development,21.521757,-77.781167,0.060,1,2
+Turkmenistan,agricultural development,38.969719,59.556278,0.052,1,2
+Kosovo,agricultural development,42.602636,20.902977,0.042,1,2
+Barbados,agricultural development,13.193887,-59.543198,0.042,1,2
+Vanuatu,agricultural development,-15.376706,166.959158,0.039,1,2
+Czech Republic,agricultural development,49.817492,15.472962,0.038,1,2
+Croatia,agricultural development,45.1,15.2,0.034,1,2
+Tonga,agricultural development,-21.178986,-175.198242,0.029,1,2
+New Caledonia,agricultural development,-20.904305,165.618042,0.027,1,2
+Djibouti,agricultural development,11.825138,42.590275,0.026,1,2
+Seychelles,agricultural development,-4.679574,55.491977,0.024,1,2
+Estonia,agricultural development,58.595272,25.013607,0.021,1,2
+Guadeloupe,agricultural development,16.995971,-62.067641,0.019,1,2
+Iceland,agricultural development,64.963051,-19.020835,0.019,1,2
+Martinique,agricultural development,14.641528,-61.024174,0.018,1,2
+Montserrat,agricultural development,16.742498,-62.187366,0.010,1,2
+Montenegro,agricultural development,42.708678,19.37439,0.010,1,2
+Malta,agricultural development,35.937496,14.375416,0.009,1,2
+Kiribati,agricultural development,-3.370417,-168.734039,0.009,1,2
+Libya,agricultural development,26.3351,17.228331,0.009,1,2
+Bahamas,agricultural development,25.03428,-77.39628,0.006,1,2
+French Polynesia,agricultural development,-17.679742,-149.406843,0.006,1,2
+Maldives,agricultural development,3.202778,73.22068,0.004,1,2
+Oman,agricultural development,21.512583,55.923255,0.002,1,2
+Tuvalu,agricultural development,-7.109535,177.64933,0.002,1,2
+United Arab Emirates,agricultural development,23.424076,53.847818,0.002,1,2
+Cook Islands,agricultural development,-21.236736,-159.777671,0.002,1,2
+Niue,agricultural development,-19.054445,-169.867233,0.002,1,2
+Marshall Islands,agricultural development,7.131474,171.184478,0.002,1,2
+Bahrain,agricultural development,25.930414,50.637772,0.002,1,2
+Nauru,agricultural development,-0.522778,166.931503,0.001,1,2
+Palau,agricultural development,7.51498,134.58252,0.001,1,2
+Cayman Islands,agricultural development,19.513469,-80.566956,0.001,0.5,2
+Belarus,agricultural development,53.709807,27.953389,0.000,0.5,2
+Netherlands Antilles,agricultural development,12.226079,-69.060087,0.000,0.5,2
+Kuwait,agricultural development,29.31166,47.481766,0.000,0.5,2
+Mayotte,agricultural development,-12.8275,45.166244,0.000,0.5,2
+Anguilla,agricultural development,18.220554,-63.068615,0.000,0.5,2
+French Guiana,agricultural development,3.933889,-53.125782,0.000,0.5,2
+France,agricultural development,46.227638,2.213749,0.000,0.5,2

@@ -1,0 +1,163 @@
+country,purpose,latitude,longitude,amount,radius,color
+China,road transport,35.86166,104.195397,28.088,6,1
+India,road transport,20.593684,78.96288,23.271,6,1
+Brazil,road transport,-14.235004,-51.92528,19.962,6,1
+Indonesia,road transport,-0.789275,113.921327,17.288,6,1
+Philippines,road transport,12.879721,121.774017,10.992,6,1
+Argentina,road transport,-38.416097,-63.616672,9.958,5,1
+Bolivia,road transport,-16.290154,-63.588653,8.586,5,1
+Thailand,road transport,15.870032,100.992541,8.464,5,1
+Bangladesh,road transport,23.684994,90.356331,8.316,5,1
+Peru,road transport,-9.189967,-75.015152,8.285,5,1
+Colombia,road transport,4.570868,-74.297333,7.720,5,2
+Tanzania,road transport,-6.369028,34.888822,7.209,5,2
+Mexico,road transport,23.634501,-102.552784,7.098,5,2
+Pakistan,road transport,30.375321,69.345116,6.400,5,2
+Ethiopia,road transport,9.145,40.489673,6.393,5,2
+Morocco,road transport,31.791702,-7.09262,6.233,5,2
+Kenya,road transport,-0.023559,37.906193,5.861,5,2
+Kazakhstan,road transport,48.019573,66.923684,5.037,5,2
+Turkey,road transport,38.963745,35.243322,4.778,4,2
+Ecuador,road transport,-1.831239,-78.183406,4.427,4,2
+Afghanistan,road transport,33.93911,67.709953,4.252,4,2
+Sri Lanka,road transport,7.873054,80.771797,4.248,4,2
+Ghana,road transport,7.946527,-1.023194,4.221,4,2
+Tunisia,road transport,33.886917,9.537499,4.098,4,2
+Cameroon,road transport,7.369722,12.354722,3.870,4,2
+Poland,road transport,51.919438,19.145136,3.446,4,2
+Chile,road transport,-35.675147,-71.542969,3.280,4,2
+Japan,road transport,36.204824,138.252924,3.161,4,2
+Uganda,road transport,1.373333,32.290275,3.136,4,2
+Mozambique,road transport,-18.665695,35.529562,3.105,4,2
+Burkina Faso,road transport,12.238333,-1.561593,3.030,4,2
+Madagascar,road transport,-18.766947,46.869107,2.976,4,2
+Nepal,road transport,28.394857,84.124008,2.974,4,2
+Russia,road transport,61.52401,105.318756,2.816,4,2
+Nigeria,road transport,9.081999,8.675277,2.747,4,2
+Sudan,road transport,12.862807,30.217636,2.715,4,2
+Venezuela,road transport,6.42375,-66.58973,2.712,4,2
+Zambia,road transport,-13.133897,27.849332,2.710,4,2
+Yemen,road transport,15.552727,48.516388,2.609,4,2
+Honduras,road transport,15.199999,-86.241905,2.607,4,2
+Uruguay,road transport,-32.522779,-55.765835,2.497,4,2
+Senegal,road transport,14.497401,-14.452362,2.494,4,2
+Papua New Guinea,road transport,-6.314993,143.95555,2.326,4,2
+Paraguay,road transport,-23.442503,-58.443832,2.272,4,2
+Panama,road transport,8.537981,-80.782127,2.238,4,2
+Mali,road transport,17.570692,-3.996166,2.232,4,2
+Romania,road transport,45.943161,24.96676,2.166,4,2
+Benin,road transport,9.30769,2.315834,2.126,4,2
+Rwanda,road transport,-1.940278,29.873888,2.069,4,2
+Ukraine,road transport,48.379433,31.16558,2.064,4,2
+Malawi,road transport,-13.254308,34.301525,2.051,4,2
+Niger,road transport,17.607789,8.081666,1.986,4,2
+El Salvador,road transport,13.794185,-88.89653,1.895,4,2
+Laos,road transport,19.85627,102.495496,1.842,4,2
+Algeria,road transport,28.033886,1.659626,1.834,4,2
+Guinea,road transport,9.945587,-9.696645,1.797,4,2
+Azerbaijan,road transport,40.143105,47.576927,1.735,4,2
+Hungary,road transport,47.162494,19.503304,1.731,4,2
+Mauritania,road transport,21.00789,-10.940835,1.686,4,2
+Guatemala,road transport,15.783471,-90.230759,1.620,4,2
+Haiti,road transport,18.971187,-72.285215,1.604,4,2
+Chad,road transport,15.454166,18.732207,1.571,4,2
+Syria,road transport,34.802075,38.996815,1.535,4,2
+Nicaragua,road transport,12.865416,-85.207229,1.491,3,2
+Iran,road transport,32.427908,53.688046,1.488,3,2
+Malaysia,road transport,4.210484,101.975766,1.431,3,2
+Cambodia,road transport,12.565679,104.990963,1.412,3,2
+Gabon,road transport,-0.803689,11.609444,1.405,3,2
+Serbia,road transport,44.016521,21.005859,1.379,3,2
+Georgia,road transport,42.315407,43.356892,1.349,3,2
+Burundi,road transport,-3.373056,29.918886,1.304,3,2
+Dominican Republic,road transport,18.735693,-70.162651,1.247,3,2
+Botswana,road transport,-22.328474,24.684866,1.243,3,2
+Jamaica,road transport,18.109581,-77.297508,1.145,3,2
+Jordan,road transport,30.585164,36.238414,1.139,3,2
+Lebanon,road transport,33.854721,35.862285,1.130,3,2
+Liberia,road transport,6.428055,-9.429499,1.127,3,2
+Somalia,road transport,5.152149,46.199616,1.125,3,2
+Oman,road transport,21.512583,55.923255,1.058,3,2
+Sierra Leone,road transport,8.460555,-11.779889,1.048,3,2
+Costa Rica,road transport,9.748917,-83.753428,1.023,3,2
+Zimbabwe,road transport,-19.015438,29.154857,0.981,3,2
+Iraq,road transport,33.223191,43.679291,0.963,3,2
+Togo,road transport,8.619543,0.824782,0.939,3,2
+Croatia,road transport,45.1,15.2,0.931,3,2
+Central African Republic,road transport,6.611111,20.939444,0.918,3,2
+Israel,road transport,31.046051,34.851612,0.846,3,2
+Lesotho,road transport,-29.609988,28.233608,0.782,3,2
+Albania,road transport,41.153332,20.168331,0.776,3,2
+Tajikistan,road transport,38.861034,71.276093,0.749,3,2
+Uzbekistan,road transport,41.377491,64.585262,0.747,3,2
+Gambia,road transport,13.443182,-15.310139,0.722,3,2
+Czech Republic,road transport,49.817492,15.472962,0.698,3,2
+Swaziland,road transport,-26.522503,31.465866,0.694,3,2
+Egypt,road transport,26.820553,30.802498,0.632,3,2
+Mongolia,road transport,46.862496,103.846656,0.628,3,2
+Solomon Islands,road transport,-9.64571,160.156194,0.549,3,2
+Bulgaria,road transport,42.733883,25.48583,0.525,3,2
+Namibia,road transport,-22.95764,18.49041,0.477,2,2
+Armenia,road transport,40.069099,45.038189,0.446,2,2
+Finland,road transport,61.92411,25.748151,0.427,2,2
+Cape Verde,road transport,16.002082,-24.013197,0.420,2,2
+Belize,road transport,17.189877,-88.49765,0.399,2,2
+Moldova,road transport,47.411631,28.369885,0.399,2,2
+Guinea-Bissau,road transport,11.803749,-15.180413,0.389,2,2
+Fiji,road transport,-16.578193,179.414413,0.372,2,2
+Mauritius,road transport,-20.348404,57.552152,0.363,2,2
+Djibouti,road transport,11.825138,42.590275,0.341,2,2
+Cyprus,road transport,35.126413,33.429859,0.319,2,2
+Timor-Leste,road transport,-8.874217,125.727539,0.306,2,2
+Portugal,road transport,39.399872,-8.224454,0.297,2,2
+Guyana,road transport,4.860416,-58.93018,0.294,2,2
+Comoros,road transport,-11.875001,43.872219,0.261,2,2
+Spain,road transport,40.463667,-3.74922,0.245,2,2
+Belarus,road transport,53.709807,27.953389,0.236,2,2
+Barbados,road transport,13.193887,-59.543198,0.223,2,2
+Bahrain,road transport,25.930414,50.637772,0.210,2,2
+Lithuania,road transport,55.169438,23.881275,0.209,2,2
+Taiwan,road transport,23.69781,120.960515,0.203,2,2
+Bhutan,road transport,27.514162,90.433601,0.194,2,2
+Dominica,road transport,15.414999,-61.370976,0.178,2,2
+Eritrea,road transport,15.179384,39.782334,0.177,2,2
+Suriname,road transport,3.919305,-56.027783,0.175,2,2
+Turkmenistan,road transport,38.969719,59.556278,0.171,2,2
+Grenada,road transport,12.262776,-61.604171,0.154,2,2
+Angola,road transport,-11.202692,17.873887,0.140,2,2
+Greece,road transport,39.074208,21.824312,0.113,2,2
+Bahamas,road transport,25.03428,-77.39628,0.109,2,2
+Estonia,road transport,58.595272,25.013607,0.108,2,2
+Slovenia,road transport,46.151241,14.995463,0.089,1,2
+Latvia,road transport,56.879635,24.603189,0.082,1,2
+Netherlands Antilles,road transport,12.226079,-69.060087,0.079,1,2
+Mayotte,road transport,-12.8275,45.166244,0.072,1,2
+Vanuatu,road transport,-15.376706,166.959158,0.068,1,2
+Kiribati,road transport,-3.370417,-168.734039,0.068,1,2
+Samoa,road transport,-13.759029,-172.104629,0.063,1,2
+Palau,road transport,7.51498,134.58252,0.060,1,2
+Kosovo,road transport,42.602636,20.902977,0.057,1,2
+New Caledonia,road transport,-20.904305,165.618042,0.048,1,2
+Montenegro,road transport,42.708678,19.37439,0.044,1,2
+Tonga,road transport,-21.178986,-175.198242,0.037,1,2
+Montserrat,road transport,16.742498,-62.187366,0.036,1,2
+Equatorial Guinea,road transport,1.650801,10.267895,0.031,1,2
+South Africa,road transport,-30.559482,22.937506,0.027,1,2
+Iceland,road transport,64.963051,-19.020835,0.026,1,2
+Cayman Islands,road transport,19.513469,-80.566956,0.019,1,2
+Saudi Arabia,road transport,23.885942,45.079162,0.017,1,2
+Marshall Islands,road transport,7.131474,171.184478,0.015,1,2
+Martinique,road transport,14.641528,-61.024174,0.015,1,2
+Seychelles,road transport,-4.679574,55.491977,0.010,1,2
+Anguilla,road transport,18.220554,-63.068615,0.009,1,2
+Turks and Caicos Islands,road transport,21.694025,-71.797928,0.008,1,2
+Singapore,road transport,1.352083,103.819836,0.006,1,2
+French Polynesia,road transport,-17.679742,-149.406843,0.005,1,2
+Maldives,road transport,3.202778,73.22068,0.003,1,2
+Cook Islands,road transport,-21.236736,-159.777671,0.002,1,2
+Aruba,road transport,12.52111,-69.968338,0.002,1,2
+Niue,road transport,-19.054445,-169.867233,0.001,0.5,2
+Cuba,road transport,21.521757,-77.781167,0.001,0.5,2
+Kuwait,road transport,29.31166,47.481766,0.001,0.5,2
+Tuvalu,road transport,-7.109535,177.64933,0.000,0.5,2
+Tokelau,road transport,-8.967363,-171.855881,0.000,0.5,2
