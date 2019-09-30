@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+
+<script src="http://d3js.org/d3.v4.js"></script>
+
+
+<h1>Visualization 2</h1>
+ <h2>Change in the top 10 purposes of disbursement over time.</h2>
+
+   
+<div id="my_dataviz"></div>
+
+<h4>Question: Focusing on the purpose of the transaction. a) What are the top 10 purposes of disbursements (in terms of total amount of disbursement) and how does their amount compare over time?; b) Are there purposes that have a much higher/lower total amount among the top 10?; c) Are there purposes that show an increasing or decreasing trend (in terms of amount of disbursements) over time or that have sudden peaks or valleys?</h4>
+
+<h4>
+Explanation: Here I have used a small multples of area chart to show how the top 10 purposes of disburements vary over time. 
+    Each graph has its separate scale for the amount.
+    This graph provides easy way to see the variations in each of the purposes as well as compare them amongst each other. 
+    All the top 10 purposes of disbursement are displayed. We see that general budget support has higher amount than other purposes. 
+    We see an increasing trend in purposes Multisector aid, Rail Transport, Road Transport and Water Supply and Sanitation. 
+    These purposes have have more amount in the 2000s. We see that Agricultural Development and Industrial Development have 
+    increasing trend during the 80s but starts decreasing during 90s and 2000s. We also see sudden peaks and valleys. Sectors not specified 
+    and Debt Forgiveness have peaks during 2010 and 2008 respectively. We also see sudden peaks and valleys in the graphs of 
+    General Budget Support and Power Generation/Renewable Sources.
+
+
+
+
+</h4>
+
+<style>
+     
+    body {
+            font-family: Helvetica, Arial, sans-serif;
+
+        }
+    
+    
+        h1 {
+            background-color: #2a5599;
+            color: white;
+            padding: 10px;
+        }
+    
+    h2 {
+        font-size: 20px;
+        font: Arial;
+    }
+    
+    #my_dataviz {
+        width: 1200px;
+        border: solid 1px #a9a9a9;
+    }
+    
+    .svg text {
+        font: 20px sans-serif;
+    }
+    
+    .tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 200px;					
+    height: 60px;					
+    padding: 2px;				
+    font: 13px sans-serif;		
+    background: #dcdcdc;	
+    border: solid 1px #f5f5f5;		
+    border-radius: 3px;			
+    pointer-events: none;			
+}
+</style>
+
+
+
+<script>
+
+var margin = {top: 20, right: 0, bottom: 30, left: 50},
+    width = 380 - margin.left - margin.right,
+    height = 160 - margin.top - margin.bottom;
+
+
+d3.csv("purpose_data.csv", function(data) {
+
+
+  var sumstat = d3.nest() 
+    .key(function(d) { return d.purpose;})
+    .entries(data);
+
+  allKeys = sumstat.map(function(d){return d.key})
+    
+    var tooltip = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden");
+
+ 
+  var svg = d3.select("#my_dataviz")
+    .selectAll("uniqueChart")
+    .data(sumstat)
+    .enter()
+    .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+
+  var x = d3.scaleLinear()
+    .domain(d3.extent(data, function(d) { return d.year; }))
+    .range([ 0, width ]);
+  svg
+    .append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x).ticks(5));
+    
+   var new_dict = d3.scaleOrdinal()
+                    .domain(allKeys)
+                    .range([10, 35, 105, 15, 15, 10, 12, 20, 40, 10]);
+    
+
+
+ 
+  var y = d3.scaleLinear()
+    .domain([0, 12])
+    .range([ height, 0 ]);
+  svg.append("g")
+    .call(d3.axisLeft(y).ticks(4));
+
+
+  var color = d3.scaleOrdinal()
+    .domain(allKeys)
+    .range(['#e41a1c','#377eb8','#4daf4a'])
+
+
+    svg
+      .append("path")
+        .attr("fill", function(d){ return color(d.key) })
+        .attr("stroke", "none")
+        .attr("d", function(d){
+          return d3.area()
+          .x(function(d) { return x(d.year) })
+          .y0(y(0))
+          .y1(function(d) { return y(d.amount) })
+            (d.values)
+        })
+      
+   svg
+    .append("text")
+    .attr("text-anchor", "start")
+    .attr("y", -5)
+    .attr("x", 20)
+    .text(function(d){ return(d.key)})
+    .style("fill", '#000000')
+
+
+})
+    
+    d3.csv("purpose2.csv", function(data) {
+
+  
+  var sumstat = d3.nest() 
+    .key(function(d) { return d.purpose;})
+    .entries(data);
+
+
+  allKeys = sumstat.map(function(d){return d.key})
+        
+        var tooltip = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden");
+
+ 
+  var svg = d3.select("#my_dataviz")
+    .selectAll("uniqueChart")
+    .data(sumstat)
+    .enter()
+    .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+
+  var x = d3.scaleLinear()
+    .domain(d3.extent(data, function(d) { return d.year; }))
+    .range([ 0, width ]);
+  svg
+    .append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x).ticks(5));
+    
+
+
+  var y = d3.scaleLinear()
+    .domain([0, 35])
+    .range([ height, 0 ]);
+  svg.append("g")
+    .call(d3.axisLeft(y).ticks(4));
+
+
+  var color = d3.scaleOrdinal()
+    .domain(allKeys)
+    .range(['#984ea3','#ff7f00','#FEE81C'])
+
+ 
+    svg
+      .append("path")
+        .attr("fill", function(d){ return color(d.key) })
+        .attr("stroke", "none")
+        .attr("d", function(d){
+          return d3.area()
+          .x(function(d) { return x(d.year) })
+          .y0(y(0))
+          .y1(function(d) { return y(d.amount) })
+            (d.values)
+        })
+       
+   svg
+    .append("text")
+    .attr("text-anchor", "start")
+    .attr("y", -5)
+    .attr("x", 20)
+    .text(function(d){ return(d.key)})
+    .style("fill", '#000000')
+
+
+})
+    d3.csv("purpose3.csv", function(data) {
+
+ 
+  var sumstat = d3.nest()
+    .key(function(d) { return d.purpose;})
+    .entries(data);
+
+ 
+  allKeys = sumstat.map(function(d){return d.key})
+        
+        var tooltip = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden");
+
+
+  var svg = d3.select("#my_dataviz")
+    .selectAll("uniqueChart")
+    .data(sumstat)
+    .enter()
+    .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+  
+  var x = d3.scaleLinear()
+    .domain(d3.extent(data, function(d) { return d.year; }))
+    .range([ 0, width ]);
+  svg
+    .append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x).ticks(5));
+    
+
+ 
+  var y = d3.scaleLinear()
+    .domain([0, 105])
+    .range([ height, 0 ]);
+  svg.append("g")
+    .call(d3.axisLeft(y).ticks(4));
+
+  
+  var color = d3.scaleOrdinal()
+    .domain(allKeys)
+    .range(['#a65628'])
+
+   
+    svg
+      .append("path")
+        .attr("fill", function(d){ return color(d.key) })
+        .attr("stroke", "none")
+        .attr("d", function(d){
+          return d3.area()
+          .x(function(d) { return x(d.year) })
+          .y0(y(0))
+          .y1(function(d) { return y(d.amount) })
+            (d.values)
+        })
+        
+   svg
+    .append("text")
+    .attr("text-anchor", "start")
+    .attr("y", -5)
+    .attr("x", 20)
+    .text(function(d){ return(d.key)})
+    .style("fill", '#000000')
+
+
+})
+        d3.csv("purpose4.csv", function(data) {
+
+  
+  var sumstat = d3.nest() 
+    .key(function(d) { return d.purpose;})
+    .entries(data);
+
+ 
+  allKeys = sumstat.map(function(d){return d.key})
+        
+        var tooltip = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("visibility", "hidden");
+
+
+  var svg = d3.select("#my_dataviz")
+    .selectAll("uniqueChart")
+    .data(sumstat)
+    .enter()
+    .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+
+  
+  var x = d3.scaleLinear()
+    .domain(d3.extent(data, function(d) { return d.year; }))
+    .range([ 0, width ]);
+  svg
+    .append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x).ticks(5));
+    
+
+  
+  var y = d3.scaleLinear()
+    .domain([0, 8])
+    .range([ height, 0 ]);
+  svg.append("g")
+    .call(d3.axisLeft(y).ticks(4));
+
+  
+  var color = d3.scaleOrdinal()
+    .domain(allKeys)
+    .range(['#f781bf','#999999', '#a8d4ef'])
+
+    
+    svg
+      .append("path")
+        .attr("fill", function(d){ return color(d.key) })
+        .attr("stroke", "none")
+        .attr("d", function(d){
+          return d3.area()
+          .x(function(d) { return x(d.year) })
+          .y0(y(0))
+          .y1(function(d) { return y(d.amount) })
+            (d.values)
+        })
+              
+            
+            
+   svg
+    .append("text")
+    .attr("text-anchor", "start")
+    .attr("y", -5)
+    .attr("x", 5)
+    .text(function(d){ return(d.key)})
+    .style("fill", '#000000')
+
+
+})
+</script>

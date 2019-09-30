@@ -1,0 +1,178 @@
+agricultural development,1949,0.0811,1
+agricultural development,1951,0.0487,1
+agricultural development,1952,0.0105,1
+agricultural development,1953,0.0105,1
+agricultural development,1954,0.0406,1
+agricultural development,1955,0.0122,1
+agricultural development,1959,0.0568,1
+agricultural development,1960,0.1476,1
+agricultural development,1961,0.1664,1
+agricultural development,1963,0.2320,1
+agricultural development,1964,0.5522,1
+agricultural development,1965,0.4896,1
+agricultural development,1966,0.3493,1
+agricultural development,1967,1.0809,1
+agricultural development,1968,0.2300,1
+agricultural development,1969,1.4631,1
+agricultural development,1970,1.9746,1
+agricultural development,1971,1.8801,1
+agricultural development,1972,1.3409,1
+agricultural development,1973,4.4935,1
+agricultural development,1974,5.4913,1
+agricultural development,1975,4.3820,1
+agricultural development,1976,4.3359,1
+agricultural development,1977,5.1726,1
+agricultural development,1978,6.1099,1
+agricultural development,1979,6.3544,1
+agricultural development,1980,5.5926,1
+agricultural development,1981,7.3072,1
+agricultural development,1982,6.8023,1
+agricultural development,1983,6.8285,1
+agricultural development,1984,5.5169,1
+agricultural development,1985,6.4541,1
+agricultural development,1986,6.7906,1
+agricultural development,1987,4.4846,1
+agricultural development,1988,4.4522,1
+agricultural development,1989,5.1702,1
+agricultural development,1990,3.7752,1
+agricultural development,1991,2.8062,1
+agricultural development,1992,2.9866,1
+agricultural development,1993,1.9448,1
+agricultural development,1994,2.7367,1
+agricultural development,1995,1.3897,1
+agricultural development,1996,3.0727,1
+agricultural development,1997,1.9604,1
+agricultural development,1998,3.0437,1
+agricultural development,1999,2.3264,1
+agricultural development,2000,2.0229,1
+agricultural development,2001,3.9447,1
+agricultural development,2002,1.7926,1
+agricultural development,2003,1.9230,1
+agricultural development,2004,1.5240,1
+agricultural development,2005,2.0421,1
+agricultural development,2006,2.1406,1
+agricultural development,2007,2.3404,1
+agricultural development,2008,2.5100,1
+agricultural development,2009,3.3336,1
+agricultural development,2010,2.9926,1
+agricultural development,2011,2.4535,1
+agricultural development,2012,3.5640,1
+agricultural development,2013,4.1555,1
+power generation/renewable sources,1948,0.1095,6
+power generation/renewable sources,1949,0.1014,6
+power generation/renewable sources,1950,0.1711,6
+power generation/renewable sources,1951,0.0195,6
+power generation/renewable sources,1952,0.2044,6
+power generation/renewable sources,1953,0.1403,6
+power generation/renewable sources,1954,0.2287,6
+power generation/renewable sources,1955,0.3001,6
+power generation/renewable sources,1956,0.8516,6
+power generation/renewable sources,1957,0.1703,6
+power generation/renewable sources,1958,1.9708,6
+power generation/renewable sources,1959,0.0811,6
+power generation/renewable sources,1960,0.3982,6
+power generation/renewable sources,1961,0.4479,6
+power generation/renewable sources,1962,0.9315,6
+power generation/renewable sources,1963,0.9421,6
+power generation/renewable sources,1964,0.9228,6
+power generation/renewable sources,1965,0.7875,6
+power generation/renewable sources,1966,0.5052,6
+power generation/renewable sources,1968,1.3834,6
+power generation/renewable sources,1969,0.5342,6
+power generation/renewable sources,1970,0.9144,6
+power generation/renewable sources,1971,1.0960,6
+power generation/renewable sources,1972,1.7155,6
+power generation/renewable sources,1973,2.5423,6
+power generation/renewable sources,1974,1.9158,6
+power generation/renewable sources,1975,2.0410,6
+power generation/renewable sources,1976,1.5185,6
+power generation/renewable sources,1977,3.2427,6
+power generation/renewable sources,1978,4.1226,6
+power generation/renewable sources,1979,2.4062,6
+power generation/renewable sources,1980,2.9638,6
+power generation/renewable sources,1981,5.6966,6
+power generation/renewable sources,1982,4.3090,6
+power generation/renewable sources,1983,5.9211,6
+power generation/renewable sources,1984,6.1507,6
+power generation/renewable sources,1985,1.7553,6
+power generation/renewable sources,1986,3.0666,6
+power generation/renewable sources,1987,1.6034,6
+power generation/renewable sources,1988,0.9803,6
+power generation/renewable sources,1989,3.3405,6
+power generation/renewable sources,1990,0.9331,6
+power generation/renewable sources,1991,1.6130,6
+power generation/renewable sources,1992,2.0975,6
+power generation/renewable sources,1993,4.2943,6
+power generation/renewable sources,1994,2.8380,6
+power generation/renewable sources,1995,4.0855,6
+power generation/renewable sources,1996,3.7095,6
+power generation/renewable sources,1997,2.4296,6
+power generation/renewable sources,1998,1.3421,6
+power generation/renewable sources,1999,1.0081,6
+power generation/renewable sources,2000,1.6876,6
+power generation/renewable sources,2001,1.4644,6
+power generation/renewable sources,2002,2.1120,6
+power generation/renewable sources,2003,0.7345,6
+power generation/renewable sources,2004,1.5004,6
+power generation/renewable sources,2005,3.3789,6
+power generation/renewable sources,2006,2.1565,6
+power generation/renewable sources,2007,3.4675,6
+power generation/renewable sources,2008,2.7846,6
+power generation/renewable sources,2009,3.9536,6
+power generation/renewable sources,2010,4.4938,6
+power generation/renewable sources,2011,7.0541,6
+power generation/renewable sources,2012,2.8027,6
+power generation/renewable sources,2013,5.8213,6
+water supply and sanitation - large systems,1961,0.0512,10
+water supply and sanitation - large systems,1962,0.0384,10
+water supply and sanitation - large systems,1963,0.3978,10
+water supply and sanitation - large systems,1964,0.1468,10
+water supply and sanitation - large systems,1965,0.0485,10
+water supply and sanitation - large systems,1966,0.1572,10
+water supply and sanitation - large systems,1967,0.0128,10
+water supply and sanitation - large systems,1968,0.3143,10
+water supply and sanitation - large systems,1969,0.1188,10
+water supply and sanitation - large systems,1970,0.5163,10
+water supply and sanitation - large systems,1971,0.9416,10
+water supply and sanitation - large systems,1972,1.2431,10
+water supply and sanitation - large systems,1973,1.8990,10
+water supply and sanitation - large systems,1974,1.6741,10
+water supply and sanitation - large systems,1975,1.8408,10
+water supply and sanitation - large systems,1976,2.3759,10
+water supply and sanitation - large systems,1977,2.8444,10
+water supply and sanitation - large systems,1978,3.5948,10
+water supply and sanitation - large systems,1979,2.7006,10
+water supply and sanitation - large systems,1980,3.4122,10
+water supply and sanitation - large systems,1981,3.3584,10
+water supply and sanitation - large systems,1982,2.7687,10
+water supply and sanitation - large systems,1983,4.1035,10
+water supply and sanitation - large systems,1984,3.1405,10
+water supply and sanitation - large systems,1985,5.4586,10
+water supply and sanitation - large systems,1986,3.7018,10
+water supply and sanitation - large systems,1987,4.4171,10
+water supply and sanitation - large systems,1988,3.0210,10
+water supply and sanitation - large systems,1989,3.1541,10
+water supply and sanitation - large systems,1990,3.7336,10
+water supply and sanitation - large systems,1991,3.4261,10
+water supply and sanitation - large systems,1992,3.4961,10
+water supply and sanitation - large systems,1993,4.2895,10
+water supply and sanitation - large systems,1994,4.5180,10
+water supply and sanitation - large systems,1995,4.8422,10
+water supply and sanitation - large systems,1996,5.4205,10
+water supply and sanitation - large systems,1997,4.9332,10
+water supply and sanitation - large systems,1998,3.3834,10
+water supply and sanitation - large systems,1999,4.4552,10
+water supply and sanitation - large systems,2000,5.1935,10
+water supply and sanitation - large systems,2001,5.3506,10
+water supply and sanitation - large systems,2002,3.7516,10
+water supply and sanitation - large systems,2003,3.3492,10
+water supply and sanitation - large systems,2004,3.7865,10
+water supply and sanitation - large systems,2005,4.9686,10
+water supply and sanitation - large systems,2006,5.1275,10
+water supply and sanitation - large systems,2007,6.7462,10
+water supply and sanitation - large systems,2008,3.7344,10
+water supply and sanitation - large systems,2009,5.6775,10
+water supply and sanitation - large systems,2010,5.3641,10
+water supply and sanitation - large systems,2011,5.6797,10
+water supply and sanitation - large systems,2012,4.0838,10
+water supply and sanitation - large systems,2013,5.7293,10
